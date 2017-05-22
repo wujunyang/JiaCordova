@@ -1,0 +1,78 @@
+PODS:
+  - Cordova (4.3.0)
+  - cordova-plugin-camera (2.3.0):
+    - Cordova (>= 4.3.0)
+  - cordova-plugin-contacts (2.2.0):
+    - Cordova (>= 4.3.0)
+  - cordova-plugin-device (1.1.3):
+    - Cordova (>= 4.3.0)
+  - cordova-plugin-device-motion (1.2.2):
+    - Cordova (>= 4.3.0)
+  - cordova-plugin-device-orientation (1.0.4):
+    - Cordova (>= 4.3.0)
+  - cordova-plugin-file (4.3.0):
+    - Cordova (>= 4.3.0)
+  - cordova-plugin-file-transfer (1.6.0):
+    - Cordova (>= 4.3.0)
+    - cordova-plugin-file
+  - cordova-plugin-geolocation (2.4.0):
+    - Cordova (>= 4.3.0)
+  - cordova-plugin-globalization (1.0.4):
+    - Cordova (>= 4.3.0)
+  - cordova-plugin-inappbrowser (1.5.0):
+    - Cordova (>= 4.3.0)
+  - cordova-plugin-media-capture (1.4.0):
+    - Cordova (>= 4.3.0)
+    - cordova-plugin-file
+  - cordova-plugin-network-information (1.3.0):
+    - Cordova (>= 4.3.0)
+  - cordova-plugin-splashscreen (4.0.0):
+    - Cordova (>= 4.3.0)
+  - cordova-plugin-statusbar (2.2.0):
+    - Cordova (>= 4.3.0)
+  - cordova-plugin-vibration (2.1.2):
+    - Cordova (>= 4.3.0)
+  - CordovaPlugin-console (0.2.10):
+    - Cordova (>= 3.0.0)
+
+DEPENDENCIES:
+  - Cordova
+  - cordova-plugin-camera
+  - cordova-plugin-contacts
+  - cordova-plugin-device
+  - cordova-plugin-device-motion
+  - cordova-plugin-device-orientation
+  - cordova-plugin-file
+  - cordova-plugin-file-transfer
+  - cordova-plugin-geolocation
+  - cordova-plugin-globalization
+  - cordova-plugin-inappbrowser
+  - cordova-plugin-media-capture
+  - cordova-plugin-network-information
+  - cordova-plugin-splashscreen
+  - cordova-plugin-statusbar
+  - cordova-plugin-vibration
+  - CordovaPlugin-console
+
+SPEC CHECKSUMS:
+  Cordova: 9dda9e4a521d8f0af561cba93e59f142ed7b306f
+  cordova-plugin-camera: f14580de3a57553b9e1e133fe2963216b2a444eb
+  cordova-plugin-contacts: 0f5f663a3a0a884247910f745025a2364deaaff4
+  cordova-plugin-device: a8d085e5d9d10712c537e3ef3c8c3e49a35c6a90
+  cordova-plugin-device-motion: 887a56d2ba37f86d0c7eba9c6ceba8f19a6bcc2c
+  cordova-plugin-device-orientation: a245e37b974e926265b21d07c7bdfd64d453b8ef
+  cordova-plugin-file: 4458961f1158dbbc2502f70e8945ea252aa9ed2b
+  cordova-plugin-file-transfer: fd65c80d5b29ad73bf0b2a50761455a6f9049141
+  cordova-plugin-geolocation: dc6dbcfcef654312bbf50b87045ccf1f07efcd28
+  cordova-plugin-globalization: 1ac9a8fa27214550b775bc70b4b919dfd3e66e76
+  cordova-plugin-inappbrowser: 524780743ddeaa363d9f70b5e4700d55efde3dd4
+  cordova-plugin-media-capture: d3fcdb1b0f50ee9f5778fff22d84f6620db98f94
+  cordova-plugin-network-information: 89f1639b86374336ffac71f45e8913d493e9fc9e
+  cordova-plugin-splashscreen: 7e4e02d6353b5a94e3af1563c4ebf0e05765bbf3
+  cordova-plugin-statusbar: 4e7f07a6063ff116e40140dae9963890637da214
+  cordova-plugin-vibration: ba02ccf635f9ac6f394a45aa07cda015c0a1f114
+  CordovaPlugin-console: aeb6015a9830edaaf8158a6b49f18189ebf38aa5
+
+PODFILE CHECKSUM: 57e0ba5e933e1e842b1c356caaa47f47d3ed38d7
+
+COCOAPODS: 1.2.0.beta.1

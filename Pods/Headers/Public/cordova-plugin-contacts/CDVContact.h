@@ -1,0 +1,1 @@
+../../../cordova-plugin-contacts/src/ios/CDVContact.h

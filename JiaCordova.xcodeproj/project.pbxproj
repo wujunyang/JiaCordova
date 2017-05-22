@@ -1,0 +1,758 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		34A22312A9EC000B08E0664B /* libPods-JiaCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF3FAF97D294CE47AAA10CD /* libPods-JiaCordova.a */; };
+		34FD29431ED272AE00230BE3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FD29421ED272AE00230BE3 /* main.m */; };
+		34FD29461ED272AE00230BE3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FD29451ED272AE00230BE3 /* AppDelegate.m */; };
+		34FD29491ED272AE00230BE3 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FD29481ED272AE00230BE3 /* RootViewController.m */; };
+		34FD294C1ED272AE00230BE3 /* DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FD294B1ED272AE00230BE3 /* DataViewController.m */; };
+		34FD294F1ED272AE00230BE3 /* ModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FD294E1ED272AE00230BE3 /* ModelController.m */; };
+		34FD29521ED272AE00230BE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34FD29501ED272AE00230BE3 /* Main.storyboard */; };
+		34FD29541ED272AE00230BE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34FD29531ED272AE00230BE3 /* Assets.xcassets */; };
+		34FD29571ED272AE00230BE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34FD29551ED272AE00230BE3 /* LaunchScreen.storyboard */; };
+		34FD29621ED272AE00230BE3 /* JiaCordovaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FD29611ED272AE00230BE3 /* JiaCordovaTests.m */; };
+		34FD296D1ED272AF00230BE3 /* JiaCordovaUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FD296C1ED272AF00230BE3 /* JiaCordovaUITests.m */; };
+		34FD298B1ED27CD100230BE3 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FD297F1ED27CD100230BE3 /* AFHTTPSessionManager.m */; };
+		34FD298C1ED27CD100230BE3 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FD29821ED27CD100230BE3 /* AFNetworkReachabilityManager.m */; };
+		34FD298D1ED27CD100230BE3 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FD29841ED27CD100230BE3 /* AFSecurityPolicy.m */; };
+		34FD298E1ED27CD100230BE3 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FD29861ED27CD100230BE3 /* AFURLRequestSerialization.m */; };
+		34FD298F1ED27CD100230BE3 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FD29881ED27CD100230BE3 /* AFURLResponseSerialization.m */; };
+		34FD29901ED27CD100230BE3 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FD298A1ED27CD100230BE3 /* AFURLSessionManager.m */; };
+		34FD29A51ED27D0300230BE3 /* AFAutoPurgingImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FD29921ED27D0300230BE3 /* AFAutoPurgingImageCache.m */; };
+		34FD29A61ED27D0300230BE3 /* AFImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FD29941ED27D0300230BE3 /* AFImageDownloader.m */; };
+		34FD29A71ED27D0300230BE3 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FD29961ED27D0300230BE3 /* AFNetworkActivityIndicatorManager.m */; };
+		34FD29A81ED27D0300230BE3 /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FD29981ED27D0300230BE3 /* UIActivityIndicatorView+AFNetworking.m */; };
+		34FD29A91ED27D0300230BE3 /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FD299A1ED27D0300230BE3 /* UIButton+AFNetworking.m */; };
+		34FD29AA1ED27D0300230BE3 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FD299D1ED27D0300230BE3 /* UIImageView+AFNetworking.m */; };
+		34FD29AB1ED27D0300230BE3 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FD29A01ED27D0300230BE3 /* UIProgressView+AFNetworking.m */; };
+		34FD29AC1ED27D0300230BE3 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FD29A21ED27D0300230BE3 /* UIRefreshControl+AFNetworking.m */; };
+		34FD29AD1ED27D0300230BE3 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FD29A41ED27D0300230BE3 /* UIWebView+AFNetworking.m */; };
+		34FD29B01ED27D9000230BE3 /* config.xml in Resources */ = {isa = PBXBuildFile; fileRef = 34FD29AE1ED27D9000230BE3 /* config.xml */; };
+		34FD29B11ED27D9000230BE3 /* www in Resources */ = {isa = PBXBuildFile; fileRef = 34FD29AF1ED27D9000230BE3 /* www */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		34FD295E1ED272AE00230BE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34FD29361ED272AE00230BE3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 34FD293D1ED272AE00230BE3;
+			remoteInfo = JiaCordova;
+		};
+		34FD29691ED272AE00230BE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34FD29361ED272AE00230BE3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 34FD293D1ED272AE00230BE3;
+			remoteInfo = JiaCordova;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1DF3FAF97D294CE47AAA10CD /* libPods-JiaCordova.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JiaCordova.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		34FD293E1ED272AE00230BE3 /* JiaCordova.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JiaCordova.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		34FD29421ED272AE00230BE3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		34FD29441ED272AE00230BE3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		34FD29451ED272AE00230BE3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		34FD29471ED272AE00230BE3 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		34FD29481ED272AE00230BE3 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		34FD294A1ED272AE00230BE3 /* DataViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataViewController.h; sourceTree = "<group>"; };
+		34FD294B1ED272AE00230BE3 /* DataViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataViewController.m; sourceTree = "<group>"; };
+		34FD294D1ED272AE00230BE3 /* ModelController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModelController.h; sourceTree = "<group>"; };
+		34FD294E1ED272AE00230BE3 /* ModelController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModelController.m; sourceTree = "<group>"; };
+		34FD29511ED272AE00230BE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		34FD29531ED272AE00230BE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		34FD29561ED272AE00230BE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		34FD29581ED272AE00230BE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34FD295D1ED272AE00230BE3 /* JiaCordovaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JiaCordovaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		34FD29611ED272AE00230BE3 /* JiaCordovaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JiaCordovaTests.m; sourceTree = "<group>"; };
+		34FD29631ED272AE00230BE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34FD29681ED272AE00230BE3 /* JiaCordovaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JiaCordovaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		34FD296C1ED272AF00230BE3 /* JiaCordovaUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JiaCordovaUITests.m; sourceTree = "<group>"; };
+		34FD296E1ED272AF00230BE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34FD297E1ED27CD100230BE3 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		34FD297F1ED27CD100230BE3 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		34FD29801ED27CD100230BE3 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		34FD29811ED27CD100230BE3 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		34FD29821ED27CD100230BE3 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		34FD29831ED27CD100230BE3 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		34FD29841ED27CD100230BE3 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		34FD29851ED27CD100230BE3 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		34FD29861ED27CD100230BE3 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		34FD29871ED27CD100230BE3 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		34FD29881ED27CD100230BE3 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		34FD29891ED27CD100230BE3 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		34FD298A1ED27CD100230BE3 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		34FD29911ED27D0300230BE3 /* AFAutoPurgingImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAutoPurgingImageCache.h; sourceTree = "<group>"; };
+		34FD29921ED27D0300230BE3 /* AFAutoPurgingImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFAutoPurgingImageCache.m; sourceTree = "<group>"; };
+		34FD29931ED27D0300230BE3 /* AFImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFImageDownloader.h; sourceTree = "<group>"; };
+		34FD29941ED27D0300230BE3 /* AFImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFImageDownloader.m; sourceTree = "<group>"; };
+		34FD29951ED27D0300230BE3 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
+		34FD29961ED27D0300230BE3 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
+		34FD29971ED27D0300230BE3 /* UIActivityIndicatorView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActivityIndicatorView+AFNetworking.h"; sourceTree = "<group>"; };
+		34FD29981ED27D0300230BE3 /* UIActivityIndicatorView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActivityIndicatorView+AFNetworking.m"; sourceTree = "<group>"; };
+		34FD29991ED27D0300230BE3 /* UIButton+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+AFNetworking.h"; sourceTree = "<group>"; };
+		34FD299A1ED27D0300230BE3 /* UIButton+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+AFNetworking.m"; sourceTree = "<group>"; };
+		34FD299B1ED27D0300230BE3 /* UIImage+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+AFNetworking.h"; sourceTree = "<group>"; };
+		34FD299C1ED27D0300230BE3 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		34FD299D1ED27D0300230BE3 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		34FD299E1ED27D0300230BE3 /* UIKit+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIKit+AFNetworking.h"; sourceTree = "<group>"; };
+		34FD299F1ED27D0300230BE3 /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
+		34FD29A01ED27D0300230BE3 /* UIProgressView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIProgressView+AFNetworking.m"; sourceTree = "<group>"; };
+		34FD29A11ED27D0300230BE3 /* UIRefreshControl+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIRefreshControl+AFNetworking.h"; sourceTree = "<group>"; };
+		34FD29A21ED27D0300230BE3 /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
+		34FD29A31ED27D0300230BE3 /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
+		34FD29A41ED27D0300230BE3 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
+		34FD29AE1ED27D9000230BE3 /* config.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = config.xml; sourceTree = "<group>"; };
+		34FD29AF1ED27D9000230BE3 /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
+		5FB7D4949989B086F941088C /* Pods-JiaCordova.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JiaCordova.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JiaCordova/Pods-JiaCordova.debug.xcconfig"; sourceTree = "<group>"; };
+		EF0939B271FA3DDEC2F622AA /* Pods-JiaCordova.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JiaCordova.release.xcconfig"; path = "Pods/Target Support Files/Pods-JiaCordova/Pods-JiaCordova.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		34FD293B1ED272AE00230BE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34A22312A9EC000B08E0664B /* libPods-JiaCordova.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34FD295A1ED272AE00230BE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34FD29651ED272AE00230BE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		34FD29351ED272AE00230BE3 = {
+			isa = PBXGroup;
+			children = (
+				34FD29401ED272AE00230BE3 /* JiaCordova */,
+				34FD29601ED272AE00230BE3 /* JiaCordovaTests */,
+				34FD296B1ED272AF00230BE3 /* JiaCordovaUITests */,
+				34FD293F1ED272AE00230BE3 /* Products */,
+				84353CEA9D53A1C6DCFE5A42 /* Pods */,
+				44EC89B564374BF15BE9EB06 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		34FD293F1ED272AE00230BE3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				34FD293E1ED272AE00230BE3 /* JiaCordova.app */,
+				34FD295D1ED272AE00230BE3 /* JiaCordovaTests.xctest */,
+				34FD29681ED272AE00230BE3 /* JiaCordovaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		34FD29401ED272AE00230BE3 /* JiaCordova */ = {
+			isa = PBXGroup;
+			children = (
+				34FD297C1ED27A8400230BE3 /* JiaNetwork */,
+				34FD297B1ED275B000230BE3 /* JiaCordovaConfig */,
+				34FD297A1ED2756200230BE3 /* JiaAFNetworking */,
+				34FD29441ED272AE00230BE3 /* AppDelegate.h */,
+				34FD29451ED272AE00230BE3 /* AppDelegate.m */,
+				34FD29471ED272AE00230BE3 /* RootViewController.h */,
+				34FD29481ED272AE00230BE3 /* RootViewController.m */,
+				34FD294A1ED272AE00230BE3 /* DataViewController.h */,
+				34FD294B1ED272AE00230BE3 /* DataViewController.m */,
+				34FD294D1ED272AE00230BE3 /* ModelController.h */,
+				34FD294E1ED272AE00230BE3 /* ModelController.m */,
+				34FD29501ED272AE00230BE3 /* Main.storyboard */,
+				34FD29531ED272AE00230BE3 /* Assets.xcassets */,
+				34FD29551ED272AE00230BE3 /* LaunchScreen.storyboard */,
+				34FD29581ED272AE00230BE3 /* Info.plist */,
+				34FD29411ED272AE00230BE3 /* Supporting Files */,
+			);
+			path = JiaCordova;
+			sourceTree = "<group>";
+		};
+		34FD29411ED272AE00230BE3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				34FD29421ED272AE00230BE3 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		34FD29601ED272AE00230BE3 /* JiaCordovaTests */ = {
+			isa = PBXGroup;
+			children = (
+				34FD29611ED272AE00230BE3 /* JiaCordovaTests.m */,
+				34FD29631ED272AE00230BE3 /* Info.plist */,
+			);
+			path = JiaCordovaTests;
+			sourceTree = "<group>";
+		};
+		34FD296B1ED272AF00230BE3 /* JiaCordovaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				34FD296C1ED272AF00230BE3 /* JiaCordovaUITests.m */,
+				34FD296E1ED272AF00230BE3 /* Info.plist */,
+			);
+			path = JiaCordovaUITests;
+			sourceTree = "<group>";
+		};
+		34FD297A1ED2756200230BE3 /* JiaAFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				34FD297E1ED27CD100230BE3 /* AFHTTPSessionManager.h */,
+				34FD297F1ED27CD100230BE3 /* AFHTTPSessionManager.m */,
+				34FD29801ED27CD100230BE3 /* AFNetworking.h */,
+				34FD29811ED27CD100230BE3 /* AFNetworkReachabilityManager.h */,
+				34FD29821ED27CD100230BE3 /* AFNetworkReachabilityManager.m */,
+				34FD29831ED27CD100230BE3 /* AFSecurityPolicy.h */,
+				34FD29841ED27CD100230BE3 /* AFSecurityPolicy.m */,
+				34FD29851ED27CD100230BE3 /* AFURLRequestSerialization.h */,
+				34FD29861ED27CD100230BE3 /* AFURLRequestSerialization.m */,
+				34FD29871ED27CD100230BE3 /* AFURLResponseSerialization.h */,
+				34FD29881ED27CD100230BE3 /* AFURLResponseSerialization.m */,
+				34FD29891ED27CD100230BE3 /* AFURLSessionManager.h */,
+				34FD298A1ED27CD100230BE3 /* AFURLSessionManager.m */,
+				34FD297D1ED27C7B00230BE3 /* UIKit+AFNetworking */,
+			);
+			path = JiaAFNetworking;
+			sourceTree = "<group>";
+		};
+		34FD297B1ED275B000230BE3 /* JiaCordovaConfig */ = {
+			isa = PBXGroup;
+			children = (
+				34FD29AE1ED27D9000230BE3 /* config.xml */,
+				34FD29AF1ED27D9000230BE3 /* www */,
+			);
+			path = JiaCordovaConfig;
+			sourceTree = "<group>";
+		};
+		34FD297C1ED27A8400230BE3 /* JiaNetwork */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = JiaNetwork;
+			sourceTree = "<group>";
+		};
+		34FD297D1ED27C7B00230BE3 /* UIKit+AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				34FD29911ED27D0300230BE3 /* AFAutoPurgingImageCache.h */,
+				34FD29921ED27D0300230BE3 /* AFAutoPurgingImageCache.m */,
+				34FD29931ED27D0300230BE3 /* AFImageDownloader.h */,
+				34FD29941ED27D0300230BE3 /* AFImageDownloader.m */,
+				34FD29951ED27D0300230BE3 /* AFNetworkActivityIndicatorManager.h */,
+				34FD29961ED27D0300230BE3 /* AFNetworkActivityIndicatorManager.m */,
+				34FD29971ED27D0300230BE3 /* UIActivityIndicatorView+AFNetworking.h */,
+				34FD29981ED27D0300230BE3 /* UIActivityIndicatorView+AFNetworking.m */,
+				34FD29991ED27D0300230BE3 /* UIButton+AFNetworking.h */,
+				34FD299A1ED27D0300230BE3 /* UIButton+AFNetworking.m */,
+				34FD299B1ED27D0300230BE3 /* UIImage+AFNetworking.h */,
+				34FD299C1ED27D0300230BE3 /* UIImageView+AFNetworking.h */,
+				34FD299D1ED27D0300230BE3 /* UIImageView+AFNetworking.m */,
+				34FD299E1ED27D0300230BE3 /* UIKit+AFNetworking.h */,
+				34FD299F1ED27D0300230BE3 /* UIProgressView+AFNetworking.h */,
+				34FD29A01ED27D0300230BE3 /* UIProgressView+AFNetworking.m */,
+				34FD29A11ED27D0300230BE3 /* UIRefreshControl+AFNetworking.h */,
+				34FD29A21ED27D0300230BE3 /* UIRefreshControl+AFNetworking.m */,
+				34FD29A31ED27D0300230BE3 /* UIWebView+AFNetworking.h */,
+				34FD29A41ED27D0300230BE3 /* UIWebView+AFNetworking.m */,
+			);
+			path = "UIKit+AFNetworking";
+			sourceTree = "<group>";
+		};
+		44EC89B564374BF15BE9EB06 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DF3FAF97D294CE47AAA10CD /* libPods-JiaCordova.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84353CEA9D53A1C6DCFE5A42 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5FB7D4949989B086F941088C /* Pods-JiaCordova.debug.xcconfig */,
+				EF0939B271FA3DDEC2F622AA /* Pods-JiaCordova.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		34FD293D1ED272AE00230BE3 /* JiaCordova */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34FD29711ED272AF00230BE3 /* Build configuration list for PBXNativeTarget "JiaCordova" */;
+			buildPhases = (
+				F78F28AACCA47AFB157451CF /* [CP] Check Pods Manifest.lock */,
+				34FD293A1ED272AE00230BE3 /* Sources */,
+				34FD293B1ED272AE00230BE3 /* Frameworks */,
+				34FD293C1ED272AE00230BE3 /* Resources */,
+				DFD2E6C08CBBF626BC0D718F /* [CP] Embed Pods Frameworks */,
+				830AA6761D7E598BD6ED43B7 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JiaCordova;
+			productName = JiaCordova;
+			productReference = 34FD293E1ED272AE00230BE3 /* JiaCordova.app */;
+			productType = "com.apple.product-type.application";
+		};
+		34FD295C1ED272AE00230BE3 /* JiaCordovaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34FD29741ED272AF00230BE3 /* Build configuration list for PBXNativeTarget "JiaCordovaTests" */;
+			buildPhases = (
+				34FD29591ED272AE00230BE3 /* Sources */,
+				34FD295A1ED272AE00230BE3 /* Frameworks */,
+				34FD295B1ED272AE00230BE3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				34FD295F1ED272AE00230BE3 /* PBXTargetDependency */,
+			);
+			name = JiaCordovaTests;
+			productName = JiaCordovaTests;
+			productReference = 34FD295D1ED272AE00230BE3 /* JiaCordovaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		34FD29671ED272AE00230BE3 /* JiaCordovaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34FD29771ED272AF00230BE3 /* Build configuration list for PBXNativeTarget "JiaCordovaUITests" */;
+			buildPhases = (
+				34FD29641ED272AE00230BE3 /* Sources */,
+				34FD29651ED272AE00230BE3 /* Frameworks */,
+				34FD29661ED272AE00230BE3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				34FD296A1ED272AE00230BE3 /* PBXTargetDependency */,
+			);
+			name = JiaCordovaUITests;
+			productName = JiaCordovaUITests;
+			productReference = 34FD29681ED272AE00230BE3 /* JiaCordovaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		34FD29361ED272AE00230BE3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = wujunyang;
+				TargetAttributes = {
+					34FD293D1ED272AE00230BE3 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+					34FD295C1ED272AE00230BE3 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 34FD293D1ED272AE00230BE3;
+					};
+					34FD29671ED272AE00230BE3 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 34FD293D1ED272AE00230BE3;
+					};
+				};
+			};
+			buildConfigurationList = 34FD29391ED272AE00230BE3 /* Build configuration list for PBXProject "JiaCordova" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 34FD29351ED272AE00230BE3;
+			productRefGroup = 34FD293F1ED272AE00230BE3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				34FD293D1ED272AE00230BE3 /* JiaCordova */,
+				34FD295C1ED272AE00230BE3 /* JiaCordovaTests */,
+				34FD29671ED272AE00230BE3 /* JiaCordovaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		34FD293C1ED272AE00230BE3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34FD29571ED272AE00230BE3 /* LaunchScreen.storyboard in Resources */,
+				34FD29541ED272AE00230BE3 /* Assets.xcassets in Resources */,
+				34FD29521ED272AE00230BE3 /* Main.storyboard in Resources */,
+				34FD29B11ED27D9000230BE3 /* www in Resources */,
+				34FD29B01ED27D9000230BE3 /* config.xml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34FD295B1ED272AE00230BE3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34FD29661ED272AE00230BE3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		830AA6761D7E598BD6ED43B7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JiaCordova/Pods-JiaCordova-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DFD2E6C08CBBF626BC0D718F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JiaCordova/Pods-JiaCordova-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F78F28AACCA47AFB157451CF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		34FD293A1ED272AE00230BE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34FD298E1ED27CD100230BE3 /* AFURLRequestSerialization.m in Sources */,
+				34FD29AA1ED27D0300230BE3 /* UIImageView+AFNetworking.m in Sources */,
+				34FD294C1ED272AE00230BE3 /* DataViewController.m in Sources */,
+				34FD29461ED272AE00230BE3 /* AppDelegate.m in Sources */,
+				34FD29AB1ED27D0300230BE3 /* UIProgressView+AFNetworking.m in Sources */,
+				34FD29A61ED27D0300230BE3 /* AFImageDownloader.m in Sources */,
+				34FD29A51ED27D0300230BE3 /* AFAutoPurgingImageCache.m in Sources */,
+				34FD294F1ED272AE00230BE3 /* ModelController.m in Sources */,
+				34FD29A91ED27D0300230BE3 /* UIButton+AFNetworking.m in Sources */,
+				34FD29A81ED27D0300230BE3 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				34FD29901ED27CD100230BE3 /* AFURLSessionManager.m in Sources */,
+				34FD29AC1ED27D0300230BE3 /* UIRefreshControl+AFNetworking.m in Sources */,
+				34FD29AD1ED27D0300230BE3 /* UIWebView+AFNetworking.m in Sources */,
+				34FD298F1ED27CD100230BE3 /* AFURLResponseSerialization.m in Sources */,
+				34FD298C1ED27CD100230BE3 /* AFNetworkReachabilityManager.m in Sources */,
+				34FD298D1ED27CD100230BE3 /* AFSecurityPolicy.m in Sources */,
+				34FD298B1ED27CD100230BE3 /* AFHTTPSessionManager.m in Sources */,
+				34FD29431ED272AE00230BE3 /* main.m in Sources */,
+				34FD29A71ED27D0300230BE3 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				34FD29491ED272AE00230BE3 /* RootViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34FD29591ED272AE00230BE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34FD29621ED272AE00230BE3 /* JiaCordovaTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34FD29641ED272AE00230BE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34FD296D1ED272AF00230BE3 /* JiaCordovaUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		34FD295F1ED272AE00230BE3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 34FD293D1ED272AE00230BE3 /* JiaCordova */;
+			targetProxy = 34FD295E1ED272AE00230BE3 /* PBXContainerItemProxy */;
+		};
+		34FD296A1ED272AE00230BE3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 34FD293D1ED272AE00230BE3 /* JiaCordova */;
+			targetProxy = 34FD29691ED272AE00230BE3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		34FD29501ED272AE00230BE3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				34FD29511ED272AE00230BE3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		34FD29551ED272AE00230BE3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				34FD29561ED272AE00230BE3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		34FD296F1ED272AF00230BE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		34FD29701ED272AF00230BE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		34FD29721ED272AF00230BE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FB7D4949989B086F941088C /* Pods-JiaCordova.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JiaCordova/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wjy.com.JiaCordova;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		34FD29731ED272AF00230BE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF0939B271FA3DDEC2F622AA /* Pods-JiaCordova.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = JiaCordova/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wjy.com.JiaCordova;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		34FD29751ED272AF00230BE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = JiaCordovaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wjy.com.JiaCordovaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JiaCordova.app/JiaCordova";
+			};
+			name = Debug;
+		};
+		34FD29761ED272AF00230BE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = JiaCordovaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wjy.com.JiaCordovaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JiaCordova.app/JiaCordova";
+			};
+			name = Release;
+		};
+		34FD29781ED272AF00230BE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = JiaCordovaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wjy.com.JiaCordovaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = JiaCordova;
+			};
+			name = Debug;
+		};
+		34FD29791ED272AF00230BE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = JiaCordovaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = wjy.com.JiaCordovaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = JiaCordova;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		34FD29391ED272AE00230BE3 /* Build configuration list for PBXProject "JiaCordova" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34FD296F1ED272AF00230BE3 /* Debug */,
+				34FD29701ED272AF00230BE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34FD29711ED272AF00230BE3 /* Build configuration list for PBXNativeTarget "JiaCordova" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34FD29721ED272AF00230BE3 /* Debug */,
+				34FD29731ED272AF00230BE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34FD29741ED272AF00230BE3 /* Build configuration list for PBXNativeTarget "JiaCordovaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34FD29751ED272AF00230BE3 /* Debug */,
+				34FD29761ED272AF00230BE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34FD29771ED272AF00230BE3 /* Build configuration list for PBXNativeTarget "JiaCordovaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34FD29781ED272AF00230BE3 /* Debug */,
+				34FD29791ED272AF00230BE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 34FD29361ED272AE00230BE3 /* Project object */;
+}

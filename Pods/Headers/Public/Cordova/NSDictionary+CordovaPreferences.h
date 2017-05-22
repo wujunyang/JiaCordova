@@ -1,0 +1,1 @@
+../../../Cordova/CordovaLib/Classes/Public/NSDictionary+CordovaPreferences.h

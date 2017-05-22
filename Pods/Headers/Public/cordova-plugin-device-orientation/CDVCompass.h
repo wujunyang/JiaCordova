@@ -1,0 +1,1 @@
+../../../cordova-plugin-device-orientation/src/ios/CDVCompass.h

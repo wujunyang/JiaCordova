@@ -1,0 +1,1 @@
+../../../Cordova/CordovaLib/Classes/Public/CDVAppDelegate.h

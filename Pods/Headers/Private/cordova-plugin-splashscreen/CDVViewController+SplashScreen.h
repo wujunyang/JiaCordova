@@ -1,0 +1,1 @@
+../../../cordova-plugin-splashscreen/src/ios/CDVViewController+SplashScreen.h

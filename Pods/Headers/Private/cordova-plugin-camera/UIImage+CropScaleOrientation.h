@@ -1,0 +1,1 @@
+../../../cordova-plugin-camera/src/ios/UIImage+CropScaleOrientation.h

@@ -1,0 +1,10 @@
+CONFIGURATION_BUILD_DIR = $PODS_CONFIGURATION_BUILD_DIR/CordovaPlugin-console
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Private/CordovaPlugin-console" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/Cordova" "${PODS_ROOT}/Headers/Public/CordovaPlugin-console" "${PODS_ROOT}/Headers/Public/cordova-plugin-camera" "${PODS_ROOT}/Headers/Public/cordova-plugin-contacts" "${PODS_ROOT}/Headers/Public/cordova-plugin-device" "${PODS_ROOT}/Headers/Public/cordova-plugin-device-motion" "${PODS_ROOT}/Headers/Public/cordova-plugin-device-orientation" "${PODS_ROOT}/Headers/Public/cordova-plugin-file" "${PODS_ROOT}/Headers/Public/cordova-plugin-file-transfer" "${PODS_ROOT}/Headers/Public/cordova-plugin-geolocation" "${PODS_ROOT}/Headers/Public/cordova-plugin-globalization" "${PODS_ROOT}/Headers/Public/cordova-plugin-inappbrowser" "${PODS_ROOT}/Headers/Public/cordova-plugin-media-capture" "${PODS_ROOT}/Headers/Public/cordova-plugin-network-information" "${PODS_ROOT}/Headers/Public/cordova-plugin-splashscreen" "${PODS_ROOT}/Headers/Public/cordova-plugin-statusbar" "${PODS_ROOT}/Headers/Public/cordova-plugin-vibration"
+LIBRARY_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/Cordova"
+PODS_BUILD_DIR = $BUILD_DIR
+PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_ROOT = ${SRCROOT}
+PODS_TARGET_SRCROOT = ${PODS_ROOT}/CordovaPlugin-console
+PRODUCT_BUNDLE_IDENTIFIER = org.cocoapods.${PRODUCT_NAME:rfc1034identifier}
+SKIP_INSTALL = YES

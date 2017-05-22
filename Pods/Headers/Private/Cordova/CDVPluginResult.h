@@ -1,0 +1,1 @@
+../../../Cordova/CordovaLib/Classes/Public/CDVPluginResult.h

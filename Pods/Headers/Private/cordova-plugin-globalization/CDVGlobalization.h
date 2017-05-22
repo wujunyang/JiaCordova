@@ -1,0 +1,1 @@
+../../../cordova-plugin-globalization/src/ios/CDVGlobalization.h

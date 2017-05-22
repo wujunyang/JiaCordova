@@ -1,0 +1,1 @@
+../../../cordova-plugin-media-capture/src/ios/CDVCapture.h

@@ -1,0 +1,1 @@
+../../../cordova-plugin-file/src/ios/CDVLocalFilesystem.h

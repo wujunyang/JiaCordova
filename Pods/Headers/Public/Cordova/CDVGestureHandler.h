@@ -1,0 +1,1 @@
+../../../Cordova/CordovaLib/Classes/Private/Plugins/CDVGestureHandler/CDVGestureHandler.h

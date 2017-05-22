@@ -1,0 +1,1 @@
+../../../cordova-plugin-file-transfer/src/ios/CDVFileTransfer.h

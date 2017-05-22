@@ -1,0 +1,1 @@
+../../../Cordova/CordovaLib/Classes/Private/CDVJSON_private.h
