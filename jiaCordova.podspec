@@ -8,7 +8,7 @@
 Pod::Spec.new do |s|
 
 s.name         = "JiaCordova"
-s.version      = "0.0.1"
+s.version      = "0.1"
 s.summary      = "在Cordova及插件的基础上封装一些常用的功能"
 
 s.homepage     = "https://github.com/wujunyang/JiaCordova"
@@ -20,24 +20,23 @@ s.source       = { :git => "https://github.com/wujunyang/JiaCordova.git", :tag =
 s.requires_arc = true
 
 
-s.subspec 'JiaAFNetworking' do |JiaAFNetworking|
-JiaAFNetworking.source_files = 'JiaCordova/JiaAFNetworking/**/*.{h,m}'
-JiaAFNetworking.frameworks = 'MobileCoreServices', 'CoreGraphics', 'Security', 'SystemConfiguration'
+s.subspec 'JiaAFNetworking' do |ss|
+ss.source_files = 'JiaCordova/JiaAFNetworking/**/*.{h,m}'
 end
 
-s.subspec 'JiaNetwork' do |JiaNetwork|
-JiaNetwork.source_files = 'JiaCordova/JiaNetwork/**/*.{h,m}'
-JiaNetwork.dependency 'JiaAFNetworking'
-JiaNetwork.framework = "CFNetwork"
+s.subspec 'JiaNetwork' do |ss|
+ss.source_files = 'JiaCordova/JiaNetwork/**/*.{h,m}'
+ss.dependency 'JiaCordova/JiaAFNetworking'
+ss.framework = "CFNetwork"
 end
 
-s.subspec 'JiaCordovaConfig' do |JiaCordovaConfig|
-JiaCordovaConfig.resources  = "JiaCordova/JiaCordovaConfig/*"
+s.subspec 'JiaCordovaConfig' do |ss|
+ss.resources  = "JiaCordova/JiaCordovaConfig/*"
 end
 
 
 # 系统库依赖
-s.frameworks = 'UIKit'
+s.frameworks = 'UIKit','MobileCoreServices', 'CoreGraphics', 'Security', 'SystemConfiguration'
 
 # Cordova 依赖
 s.dependency 'Cordova'
