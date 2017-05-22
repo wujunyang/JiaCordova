@@ -24,9 +24,18 @@
 		34FD298E1ED27CD100230BE3 /* JiaAFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FD29861ED27CD100230BE3 /* JiaAFURLRequestSerialization.m */; };
 		34FD298F1ED27CD100230BE3 /* JiaAFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FD29881ED27CD100230BE3 /* JiaAFURLResponseSerialization.m */; };
 		34FD29901ED27CD100230BE3 /* JiaAFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FD298A1ED27CD100230BE3 /* JiaAFURLSessionManager.m */; };
-		34FD29A71ED27D0300230BE3 /* JiaAFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FD29961ED27D0300230BE3 /* JiaAFNetworkActivityIndicatorManager.m */; };
 		34FD29B01ED27D9000230BE3 /* config.xml in Resources */ = {isa = PBXBuildFile; fileRef = 34FD29AE1ED27D9000230BE3 /* config.xml */; };
 		34FD29B11ED27D9000230BE3 /* www in Resources */ = {isa = PBXBuildFile; fileRef = 34FD29AF1ED27D9000230BE3 /* www */; };
+		34FD29B51ED2AA2800230BE3 /* JiaAFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FD29B41ED2AA2800230BE3 /* JiaAFNetworkActivityIndicatorManager.m */; };
+		34FD29C91ED2AABF00230BE3 /* JiaYTKBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FD29B71ED2AABF00230BE3 /* JiaYTKBaseRequest.m */; };
+		34FD29CA1ED2AABF00230BE3 /* JiaYTKBatchRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FD29B91ED2AABF00230BE3 /* JiaYTKBatchRequest.m */; };
+		34FD29CB1ED2AABF00230BE3 /* JiaYTKBatchRequestAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FD29BB1ED2AABF00230BE3 /* JiaYTKBatchRequestAgent.m */; };
+		34FD29CC1ED2AABF00230BE3 /* JiaYTKChainRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FD29BD1ED2AABF00230BE3 /* JiaYTKChainRequest.m */; };
+		34FD29CD1ED2AABF00230BE3 /* JiaYTKChainRequestAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FD29BF1ED2AABF00230BE3 /* JiaYTKChainRequestAgent.m */; };
+		34FD29CE1ED2AABF00230BE3 /* JiaYTKNetworkAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FD29C21ED2AABF00230BE3 /* JiaYTKNetworkAgent.m */; };
+		34FD29CF1ED2AABF00230BE3 /* JiaYTKNetworkConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FD29C41ED2AABF00230BE3 /* JiaYTKNetworkConfig.m */; };
+		34FD29D01ED2AABF00230BE3 /* JiaYTKNetworkPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FD29C61ED2AABF00230BE3 /* JiaYTKNetworkPrivate.m */; };
+		34FD29D11ED2AABF00230BE3 /* JiaYTKRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FD29C81ED2AABF00230BE3 /* JiaYTKRequest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,11 +90,30 @@
 		34FD29881ED27CD100230BE3 /* JiaAFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JiaAFURLResponseSerialization.m; sourceTree = "<group>"; };
 		34FD29891ED27CD100230BE3 /* JiaAFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JiaAFURLSessionManager.h; sourceTree = "<group>"; };
 		34FD298A1ED27CD100230BE3 /* JiaAFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JiaAFURLSessionManager.m; sourceTree = "<group>"; };
-		34FD29951ED27D0300230BE3 /* JiaAFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JiaAFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
-		34FD29961ED27D0300230BE3 /* JiaAFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JiaAFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
 		34FD29AE1ED27D9000230BE3 /* config.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = config.xml; sourceTree = "<group>"; };
 		34FD29AF1ED27D9000230BE3 /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
 		34FD29B21ED2876C00230BE3 /* JiaCordova.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JiaCordova.h; sourceTree = "<group>"; };
+		34FD29B31ED2AA2800230BE3 /* JiaAFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JiaAFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
+		34FD29B41ED2AA2800230BE3 /* JiaAFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JiaAFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
+		34FD29B61ED2AABF00230BE3 /* JiaYTKBaseRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JiaYTKBaseRequest.h; sourceTree = "<group>"; };
+		34FD29B71ED2AABF00230BE3 /* JiaYTKBaseRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JiaYTKBaseRequest.m; sourceTree = "<group>"; };
+		34FD29B81ED2AABF00230BE3 /* JiaYTKBatchRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JiaYTKBatchRequest.h; sourceTree = "<group>"; };
+		34FD29B91ED2AABF00230BE3 /* JiaYTKBatchRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JiaYTKBatchRequest.m; sourceTree = "<group>"; };
+		34FD29BA1ED2AABF00230BE3 /* JiaYTKBatchRequestAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JiaYTKBatchRequestAgent.h; sourceTree = "<group>"; };
+		34FD29BB1ED2AABF00230BE3 /* JiaYTKBatchRequestAgent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JiaYTKBatchRequestAgent.m; sourceTree = "<group>"; };
+		34FD29BC1ED2AABF00230BE3 /* JiaYTKChainRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JiaYTKChainRequest.h; sourceTree = "<group>"; };
+		34FD29BD1ED2AABF00230BE3 /* JiaYTKChainRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JiaYTKChainRequest.m; sourceTree = "<group>"; };
+		34FD29BE1ED2AABF00230BE3 /* JiaYTKChainRequestAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JiaYTKChainRequestAgent.h; sourceTree = "<group>"; };
+		34FD29BF1ED2AABF00230BE3 /* JiaYTKChainRequestAgent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JiaYTKChainRequestAgent.m; sourceTree = "<group>"; };
+		34FD29C01ED2AABF00230BE3 /* JiaYTKNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JiaYTKNetwork.h; sourceTree = "<group>"; };
+		34FD29C11ED2AABF00230BE3 /* JiaYTKNetworkAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JiaYTKNetworkAgent.h; sourceTree = "<group>"; };
+		34FD29C21ED2AABF00230BE3 /* JiaYTKNetworkAgent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JiaYTKNetworkAgent.m; sourceTree = "<group>"; };
+		34FD29C31ED2AABF00230BE3 /* JiaYTKNetworkConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JiaYTKNetworkConfig.h; sourceTree = "<group>"; };
+		34FD29C41ED2AABF00230BE3 /* JiaYTKNetworkConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JiaYTKNetworkConfig.m; sourceTree = "<group>"; };
+		34FD29C51ED2AABF00230BE3 /* JiaYTKNetworkPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JiaYTKNetworkPrivate.h; sourceTree = "<group>"; };
+		34FD29C61ED2AABF00230BE3 /* JiaYTKNetworkPrivate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JiaYTKNetworkPrivate.m; sourceTree = "<group>"; };
+		34FD29C71ED2AABF00230BE3 /* JiaYTKRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JiaYTKRequest.h; sourceTree = "<group>"; };
+		34FD29C81ED2AABF00230BE3 /* JiaYTKRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JiaYTKRequest.m; sourceTree = "<group>"; };
 		5FB7D4949989B086F941088C /* Pods-JiaCordova.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JiaCordova.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JiaCordova/Pods-JiaCordova.debug.xcconfig"; sourceTree = "<group>"; };
 		EF0939B271FA3DDEC2F622AA /* Pods-JiaCordova.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JiaCordova.release.xcconfig"; path = "Pods/Target Support Files/Pods-JiaCordova/Pods-JiaCordova.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -190,6 +218,8 @@
 		34FD297A1ED2756200230BE3 /* JiaAFNetworking */ = {
 			isa = PBXGroup;
 			children = (
+				34FD29B31ED2AA2800230BE3 /* JiaAFNetworkActivityIndicatorManager.h */,
+				34FD29B41ED2AA2800230BE3 /* JiaAFNetworkActivityIndicatorManager.m */,
 				34FD297E1ED27CD100230BE3 /* JiaAFHTTPSessionManager.h */,
 				34FD297F1ED27CD100230BE3 /* JiaAFHTTPSessionManager.m */,
 				34FD29801ED27CD100230BE3 /* JiaAFNetworking.h */,
@@ -203,7 +233,6 @@
 				34FD29881ED27CD100230BE3 /* JiaAFURLResponseSerialization.m */,
 				34FD29891ED27CD100230BE3 /* JiaAFURLSessionManager.h */,
 				34FD298A1ED27CD100230BE3 /* JiaAFURLSessionManager.m */,
-				34FD297D1ED27C7B00230BE3 /* UIKit+AFNetworking */,
 			);
 			path = JiaAFNetworking;
 			sourceTree = "<group>";
@@ -221,17 +250,27 @@
 		34FD297C1ED27A8400230BE3 /* JiaNetwork */ = {
 			isa = PBXGroup;
 			children = (
+				34FD29B61ED2AABF00230BE3 /* JiaYTKBaseRequest.h */,
+				34FD29B71ED2AABF00230BE3 /* JiaYTKBaseRequest.m */,
+				34FD29B81ED2AABF00230BE3 /* JiaYTKBatchRequest.h */,
+				34FD29B91ED2AABF00230BE3 /* JiaYTKBatchRequest.m */,
+				34FD29BA1ED2AABF00230BE3 /* JiaYTKBatchRequestAgent.h */,
+				34FD29BB1ED2AABF00230BE3 /* JiaYTKBatchRequestAgent.m */,
+				34FD29BC1ED2AABF00230BE3 /* JiaYTKChainRequest.h */,
+				34FD29BD1ED2AABF00230BE3 /* JiaYTKChainRequest.m */,
+				34FD29BE1ED2AABF00230BE3 /* JiaYTKChainRequestAgent.h */,
+				34FD29BF1ED2AABF00230BE3 /* JiaYTKChainRequestAgent.m */,
+				34FD29C01ED2AABF00230BE3 /* JiaYTKNetwork.h */,
+				34FD29C11ED2AABF00230BE3 /* JiaYTKNetworkAgent.h */,
+				34FD29C21ED2AABF00230BE3 /* JiaYTKNetworkAgent.m */,
+				34FD29C31ED2AABF00230BE3 /* JiaYTKNetworkConfig.h */,
+				34FD29C41ED2AABF00230BE3 /* JiaYTKNetworkConfig.m */,
+				34FD29C51ED2AABF00230BE3 /* JiaYTKNetworkPrivate.h */,
+				34FD29C61ED2AABF00230BE3 /* JiaYTKNetworkPrivate.m */,
+				34FD29C71ED2AABF00230BE3 /* JiaYTKRequest.h */,
+				34FD29C81ED2AABF00230BE3 /* JiaYTKRequest.m */,
 			);
 			path = JiaNetwork;
-			sourceTree = "<group>";
-		};
-		34FD297D1ED27C7B00230BE3 /* UIKit+AFNetworking */ = {
-			isa = PBXGroup;
-			children = (
-				34FD29951ED27D0300230BE3 /* JiaAFNetworkActivityIndicatorManager.h */,
-				34FD29961ED27D0300230BE3 /* JiaAFNetworkActivityIndicatorManager.m */,
-			);
-			path = "UIKit+AFNetworking";
 			sourceTree = "<group>";
 		};
 		44EC89B564374BF15BE9EB06 /* Frameworks */ = {
@@ -437,6 +476,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34FD29CD1ED2AABF00230BE3 /* JiaYTKChainRequestAgent.m in Sources */,
+				34FD29CE1ED2AABF00230BE3 /* JiaYTKNetworkAgent.m in Sources */,
+				34FD29CC1ED2AABF00230BE3 /* JiaYTKChainRequest.m in Sources */,
 				34FD298E1ED27CD100230BE3 /* JiaAFURLRequestSerialization.m in Sources */,
 				34FD294C1ED272AE00230BE3 /* DataViewController.m in Sources */,
 				34FD29461ED272AE00230BE3 /* AppDelegate.m in Sources */,
@@ -444,11 +486,17 @@
 				34FD29901ED27CD100230BE3 /* JiaAFURLSessionManager.m in Sources */,
 				34FD298F1ED27CD100230BE3 /* JiaAFURLResponseSerialization.m in Sources */,
 				34FD298C1ED27CD100230BE3 /* JiaAFNetworkReachabilityManager.m in Sources */,
+				34FD29D11ED2AABF00230BE3 /* JiaYTKRequest.m in Sources */,
 				34FD298D1ED27CD100230BE3 /* JiaAFSecurityPolicy.m in Sources */,
+				34FD29CF1ED2AABF00230BE3 /* JiaYTKNetworkConfig.m in Sources */,
 				34FD298B1ED27CD100230BE3 /* JiaAFHTTPSessionManager.m in Sources */,
 				34FD29431ED272AE00230BE3 /* main.m in Sources */,
-				34FD29A71ED27D0300230BE3 /* JiaAFNetworkActivityIndicatorManager.m in Sources */,
 				34FD29491ED272AE00230BE3 /* RootViewController.m in Sources */,
+				34FD29C91ED2AABF00230BE3 /* JiaYTKBaseRequest.m in Sources */,
+				34FD29B51ED2AA2800230BE3 /* JiaAFNetworkActivityIndicatorManager.m in Sources */,
+				34FD29CA1ED2AABF00230BE3 /* JiaYTKBatchRequest.m in Sources */,
+				34FD29CB1ED2AABF00230BE3 /* JiaYTKBatchRequestAgent.m in Sources */,
+				34FD29D01ED2AABF00230BE3 /* JiaYTKNetworkPrivate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

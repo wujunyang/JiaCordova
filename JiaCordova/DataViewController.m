@@ -8,7 +8,6 @@
 
 #import "DataViewController.h"
 #import "JiaAFNetworking.h"
-#import <AFNetworking.h>
 
 @interface DataViewController ()
 

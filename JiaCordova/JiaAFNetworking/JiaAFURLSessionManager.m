@@ -28,14 +28,14 @@
 #define NSFoundationVersionNumber_With_Fixed_5871104061079552_bug NSFoundationVersionNumber_iOS_8_0
 #endif
 
-static dispatch_queue_t url_session_manager_creation_queue() {
-    static dispatch_queue_t af_url_session_manager_creation_queue;
+static dispatch_queue_t jia_url_session_manager_creation_queue() {
+    static dispatch_queue_t jia_af_url_session_manager_creation_queue;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        af_url_session_manager_creation_queue = dispatch_queue_create("com.alamofire.networking.session.manager.creation", DISPATCH_QUEUE_SERIAL);
+        jia_af_url_session_manager_creation_queue = dispatch_queue_create("jia.com.alamofire.networking.session.manager.creation", DISPATCH_QUEUE_SERIAL);
     });
 
-    return af_url_session_manager_creation_queue;
+    return jia_af_url_session_manager_creation_queue;
 }
 
 static void url_session_manager_create_task_safely(dispatch_block_t block) {
@@ -43,7 +43,7 @@ static void url_session_manager_create_task_safely(dispatch_block_t block) {
         // Fix of bug
         // Open Radar:http://openradar.appspot.com/radar?id=5871104061079552 (status: Fixed in iOS8)
         // Issue about:https://github.com/AFNetworking/AFNetworking/issues/2093
-        dispatch_sync(url_session_manager_creation_queue(), block);
+        dispatch_sync(jia_url_session_manager_creation_queue(), block);
     } else {
         block();
     }
@@ -53,7 +53,7 @@ static dispatch_queue_t url_session_manager_processing_queue() {
     static dispatch_queue_t af_url_session_manager_processing_queue;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        af_url_session_manager_processing_queue = dispatch_queue_create("com.alamofire.networking.session.manager.processing", DISPATCH_QUEUE_CONCURRENT);
+        af_url_session_manager_processing_queue = dispatch_queue_create("jia.com.alamofire.networking.session.manager.processing", DISPATCH_QUEUE_CONCURRENT);
     });
 
     return af_url_session_manager_processing_queue;
@@ -69,19 +69,19 @@ static dispatch_group_t url_session_manager_completion_group() {
     return af_url_session_manager_completion_group;
 }
 
-NSString * const JiaAFNetworkingTaskDidResumeNotification = @"com.alamofire.networking.task.resume";
-NSString * const JiaAFNetworkingTaskDidCompleteNotification = @"com.alamofire.networking.task.complete";
-NSString * const JiaAFNetworkingTaskDidSuspendNotification = @"com.alamofire.networking.task.suspend";
-NSString * const JiaAFURLSessionDidInvalidateNotification = @"com.alamofire.networking.session.invalidate";
-NSString * const JiaAFURLSessionDownloadTaskDidFailToMoveFileNotification = @"com.alamofire.networking.session.download.file-manager-error";
+NSString * const JiaAFNetworkingTaskDidResumeNotification = @"jia.com.alamofire.networking.task.resume";
+NSString * const JiaAFNetworkingTaskDidCompleteNotification = @"jia.com.alamofire.networking.task.complete";
+NSString * const JiaAFNetworkingTaskDidSuspendNotification = @"jia.com.alamofire.networking.task.suspend";
+NSString * const JiaAFURLSessionDidInvalidateNotification = @"jia.com.alamofire.networking.session.invalidate";
+NSString * const JiaAFURLSessionDownloadTaskDidFailToMoveFileNotification = @"jia.com.alamofire.networking.session.download.file-manager-error";
 
-NSString * const JiaAFNetworkingTaskDidCompleteSerializedResponseKey = @"com.alamofire.networking.task.complete.serializedresponse";
-NSString * const JiaAFNetworkingTaskDidCompleteResponseSerializerKey = @"com.alamofire.networking.task.complete.responseserializer";
-NSString * const JiaAFNetworkingTaskDidCompleteResponseDataKey = @"com.alamofire.networking.complete.finish.responsedata";
-NSString * const JiaAFNetworkingTaskDidCompleteErrorKey = @"com.alamofire.networking.task.complete.error";
-NSString * const JiaAFNetworkingTaskDidCompleteAssetPathKey = @"com.alamofire.networking.task.complete.assetpath";
+NSString * const JiaAFNetworkingTaskDidCompleteSerializedResponseKey = @"jia.com.alamofire.networking.task.complete.serializedresponse";
+NSString * const JiaAFNetworkingTaskDidCompleteResponseSerializerKey = @"jia.com.alamofire.networking.task.complete.responseserializer";
+NSString * const JiaAFNetworkingTaskDidCompleteResponseDataKey = @"jia.com.alamofire.networking.complete.finish.responsedata";
+NSString * const JiaAFNetworkingTaskDidCompleteErrorKey = @"jia.com.alamofire.networking.task.complete.error";
+NSString * const JiaAFNetworkingTaskDidCompleteAssetPathKey = @"jia.com.alamofire.networking.task.complete.assetpath";
 
-static NSString * const JiaAFURLSessionManagerLockName = @"com.alamofire.networking.session.manager.lock";
+static NSString * const JiaAFURLSessionManagerLockName = @"jia.com.alamofire.networking.session.manager.lock";
 
 static NSUInteger const JiaAFMaximumNumberOfAttemptsToRecreateBackgroundSessionUploadTask = 3;
 
