@@ -24,7 +24,7 @@
 
 #if TARGET_OS_IOS || TARGET_OS_TV
 
-#import "AFURLSessionManager.h"
+#import "JiaAFURLSessionManager.h"
 
 @interface AFActivityIndicatorViewNotificationObserver : NSObject
 @property (readonly, nonatomic, weak) UIActivityIndicatorView *activityIndicatorView;

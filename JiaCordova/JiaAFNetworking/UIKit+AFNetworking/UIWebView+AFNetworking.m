@@ -25,9 +25,9 @@
 
 #if TARGET_OS_IOS
 
-#import "AFHTTPSessionManager.h"
-#import "AFURLResponseSerialization.h"
-#import "AFURLRequestSerialization.h"
+#import "JiaAFHTTPSessionManager.h"
+#import "JiaAFURLResponseSerialization.h"
+#import "JiaAFURLRequestSerialization.h"
 
 @interface UIWebView (_AFNetworking)
 @property (readwrite, nonatomic, strong, setter = af_setURLSessionTask:) NSURLSessionDataTask *af_URLSessionTask;
@@ -49,11 +49,11 @@
 
 @implementation UIWebView (AFNetworking)
 
-- (AFHTTPSessionManager  *)sessionManager {
-    static AFHTTPSessionManager *_af_defaultHTTPSessionManager = nil;
+- (JiaAFHTTPSessionManager  *)sessionManager {
+    static JiaAFHTTPSessionManager *_af_defaultHTTPSessionManager = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        _af_defaultHTTPSessionManager = [[AFHTTPSessionManager alloc] initWithSessionConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
+        _af_defaultHTTPSessionManager = [[JiaAFHTTPSessionManager alloc] initWithSessionConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
         _af_defaultHTTPSessionManager.requestSerializer = [AFHTTPRequestSerializer serializer];
         _af_defaultHTTPSessionManager.responseSerializer = [AFHTTPResponseSerializer serializer];
     });
@@ -64,12 +64,12 @@
 #pragma clang diagnostic pop
 }
 
-- (void)setSessionManager:(AFHTTPSessionManager *)sessionManager {
+- (void)setSessionManager:(JiaAFHTTPSessionManager *)sessionManager {
     objc_setAssociatedObject(self, @selector(sessionManager), sessionManager, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
-- (AFHTTPResponseSerializer <AFURLResponseSerialization> *)responseSerializer {
-    static AFHTTPResponseSerializer <AFURLResponseSerialization> *_af_defaultResponseSerializer = nil;
+- (AFHTTPResponseSerializer <JiaAFURLResponseSerialization> *)responseSerializer {
+    static AFHTTPResponseSerializer <JiaAFURLResponseSerialization> *_af_defaultResponseSerializer = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         _af_defaultResponseSerializer = [AFHTTPResponseSerializer serializer];
@@ -81,7 +81,7 @@
 #pragma clang diagnostic pop
 }
 
-- (void)setResponseSerializer:(AFHTTPResponseSerializer<AFURLResponseSerialization> *)responseSerializer {
+- (void)setResponseSerializer:(AFHTTPResponseSerializer<JiaAFURLResponseSerialization> *)responseSerializer {
     objc_setAssociatedObject(self, @selector(responseSerializer), responseSerializer, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 

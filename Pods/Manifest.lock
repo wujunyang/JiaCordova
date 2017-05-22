@@ -73,6 +73,6 @@ SPEC CHECKSUMS:
   cordova-plugin-vibration: ba02ccf635f9ac6f394a45aa07cda015c0a1f114
   CordovaPlugin-console: aeb6015a9830edaaf8158a6b49f18189ebf38aa5
 
-PODFILE CHECKSUM: 57e0ba5e933e1e842b1c356caaa47f47d3ed38d7
+PODFILE CHECKSUM: 769f2564e971ed6b2b08ff6dbaf86d4f62ada8fe
 
 COCOAPODS: 1.2.0.beta.1

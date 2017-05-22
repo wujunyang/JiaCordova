@@ -1,6 +1,6 @@
 platform :ios, ‘8.0’
 
-target ‘JiaCordova’ do
+target ‘JiaCordova’ do    
     # Cordova 库 (iOS 8.0最新版)
     pod 'Cordova'
     

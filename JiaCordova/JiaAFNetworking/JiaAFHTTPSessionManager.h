@@ -31,10 +31,10 @@
 #import <CoreServices/CoreServices.h>
 #endif
 
-#import "AFURLSessionManager.h"
+#import "JiaAFURLSessionManager.h"
 
 /**
- `AFHTTPSessionManager` is a subclass of `AFURLSessionManager` with convenience methods for making HTTP requests. When a `baseURL` is provided, requests made with the `GET` / `POST` / et al. convenience methods can be made with relative paths.
+ `AFHTTPSessionManager` is a subclass of `JiaAFURLSessionManager` with convenience methods for making HTTP requests. When a `baseURL` is provided, requests made with the `GET` / `POST` / et al. convenience methods can be made with relative paths.
 
  ## Subclassing Notes
 
@@ -73,7 +73,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface AFHTTPSessionManager : AFURLSessionManager <NSSecureCoding, NSCopying>
+@interface JiaAFHTTPSessionManager : JiaAFURLSessionManager <NSSecureCoding, NSCopying>
 
 /**
  The URL used to construct requests from relative paths in methods like `requestWithMethod:URLString:parameters:`, and the `GET` / `POST` / et al. convenience methods.
@@ -85,14 +85,14 @@ NS_ASSUME_NONNULL_BEGIN
 
  @warning `requestSerializer` must not be `nil`.
  */
-@property (nonatomic, strong) AFHTTPRequestSerializer <AFURLRequestSerialization> * requestSerializer;
+@property (nonatomic, strong) JiaAFHTTPRequestSerializer <JiaAFURLRequestSerialization> * requestSerializer;
 
 /**
  Responses sent from the server in data tasks created with `dataTaskWithRequest:success:failure:` and run using the `GET` / `POST` / et al. convenience methods are automatically validated and serialized by the response serializer. By default, this property is set to an instance of `AFJSONResponseSerializer`.
 
  @warning `responseSerializer` must not be `nil`.
  */
-@property (nonatomic, strong) AFHTTPResponseSerializer <AFURLResponseSerialization> * responseSerializer;
+@property (nonatomic, strong) JiaAFHTTPResponseSerializer <JiaAFURLResponseSerialization> * responseSerializer;
 
 ///---------------------
 /// @name Initialization
@@ -222,7 +222,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (nullable NSURLSessionDataTask *)POST:(NSString *)URLString
                     parameters:(nullable id)parameters
-     constructingBodyWithBlock:(nullable void (^)(id <AFMultipartFormData> formData))block
+     constructingBodyWithBlock:(nullable void (^)(id <JiaAFMultipartFormData> formData))block
                        success:(nullable void (^)(NSURLSessionDataTask *task, id _Nullable responseObject))success
                        failure:(nullable void (^)(NSURLSessionDataTask * _Nullable task, NSError *error))failure DEPRECATED_ATTRIBUTE;
 
@@ -240,7 +240,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (nullable NSURLSessionDataTask *)POST:(NSString *)URLString
                              parameters:(nullable id)parameters
-              constructingBodyWithBlock:(nullable void (^)(id <AFMultipartFormData> formData))block
+              constructingBodyWithBlock:(nullable void (^)(id <JiaAFMultipartFormData> formData))block
                                progress:(nullable void (^)(NSProgress *uploadProgress))uploadProgress
                                 success:(nullable void (^)(NSURLSessionDataTask *task, id _Nullable responseObject))success
                                 failure:(nullable void (^)(NSURLSessionDataTask * _Nullable task, NSError *error))failure;

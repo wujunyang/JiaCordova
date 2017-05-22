@@ -29,7 +29,7 @@ NS_ASSUME_NONNULL_BEGIN
 
  For example, a JSON response serializer may check for an acceptable status code (`2XX` range) and content type (`application/json`), decoding a valid JSON response into an object.
  */
-@protocol AFURLResponseSerialization <NSObject, NSSecureCoding, NSCopying>
+@protocol JiaAFURLResponseSerialization <NSObject, NSSecureCoding, NSCopying>
 
 /**
  The response object decoded from the data associated with a specified response.
@@ -53,7 +53,7 @@ NS_ASSUME_NONNULL_BEGIN
 
  Any request or response serializer dealing with HTTP is encouraged to subclass `AFHTTPResponseSerializer` in order to ensure consistent default behavior.
  */
-@interface AFHTTPResponseSerializer : NSObject <AFURLResponseSerialization>
+@interface JiaAFHTTPResponseSerializer : NSObject <JiaAFURLResponseSerialization>
 
 - (instancetype)init;
 
@@ -112,7 +112,7 @@ NS_ASSUME_NONNULL_BEGIN
  - `text/json`
  - `text/javascript`
  */
-@interface AFJSONResponseSerializer : AFHTTPResponseSerializer
+@interface JiaAFJSONResponseSerializer : JiaAFHTTPResponseSerializer
 
 - (instancetype)init;
 
@@ -145,7 +145,7 @@ NS_ASSUME_NONNULL_BEGIN
  - `application/xml`
  - `text/xml`
  */
-@interface AFXMLParserResponseSerializer : AFHTTPResponseSerializer
+@interface JiaAFXMLParserResponseSerializer : JiaAFHTTPResponseSerializer
 
 @end
 
@@ -161,7 +161,7 @@ NS_ASSUME_NONNULL_BEGIN
  - `application/xml`
  - `text/xml`
  */
-@interface AFXMLDocumentResponseSerializer : AFHTTPResponseSerializer
+@interface JiaAFXMLDocumentResponseSerializer : JiaAFHTTPResponseSerializer
 
 - (instancetype)init;
 
@@ -190,7 +190,7 @@ NS_ASSUME_NONNULL_BEGIN
 
  - `application/x-plist`
  */
-@interface AFPropertyListResponseSerializer : AFHTTPResponseSerializer
+@interface JiaAFPropertyListResponseSerializer : JiaAFHTTPResponseSerializer
 
 - (instancetype)init;
 
@@ -233,7 +233,7 @@ NS_ASSUME_NONNULL_BEGIN
  - `image/x-xbitmap`
  - `image/x-win-bitmap`
  */
-@interface AFImageResponseSerializer : AFHTTPResponseSerializer
+@interface JiaAFImageResponseSerializer : JiaAFHTTPResponseSerializer
 
 #if TARGET_OS_IOS || TARGET_OS_TV || TARGET_OS_WATCH
 /**
@@ -254,19 +254,19 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  `AFCompoundSerializer` is a subclass of `AFHTTPResponseSerializer` that delegates the response serialization to the first `AFHTTPResponseSerializer` object that returns an object for `responseObjectForResponse:data:error:`, falling back on the default behavior of `AFHTTPResponseSerializer`. This is useful for supporting multiple potential types and structures of server responses with a single serializer.
  */
-@interface AFCompoundResponseSerializer : AFHTTPResponseSerializer
+@interface JiaAFCompoundResponseSerializer : JiaAFHTTPResponseSerializer
 
 /**
  The component response serializers.
  */
-@property (readonly, nonatomic, copy) NSArray <id<AFURLResponseSerialization>> *responseSerializers;
+@property (readonly, nonatomic, copy) NSArray <id<JiaAFURLResponseSerialization>> *responseSerializers;
 
 /**
  Creates and returns a compound serializer comprised of the specified response serializers.
 
  @warning Each response serializer specified must be a subclass of `AFHTTPResponseSerializer`, and response to `-validateResponse:data:error:`.
  */
-+ (instancetype)compoundSerializerWithResponseSerializers:(NSArray <id<AFURLResponseSerialization>> *)responseSerializers;
++ (instancetype)compoundSerializerWithResponseSerializers:(NSArray <id<JiaAFURLResponseSerialization>> *)responseSerializers;
 
 @end
 
@@ -286,7 +286,7 @@ NS_ASSUME_NONNULL_BEGIN
  `AFURLResponseSerializationErrorDomain`
  AFURLResponseSerializer errors. Error codes for `AFURLResponseSerializationErrorDomain` correspond to codes in `NSURLErrorDomain`.
  */
-FOUNDATION_EXPORT NSString * const AFURLResponseSerializationErrorDomain;
+FOUNDATION_EXPORT NSString * const JiaAFURLResponseSerializationErrorDomain;
 
 /**
  ## User info dictionary keys
@@ -304,8 +304,8 @@ FOUNDATION_EXPORT NSString * const AFURLResponseSerializationErrorDomain;
  `AFNetworkingOperationFailingURLResponseDataErrorKey`
  The corresponding value is an `NSData` containing the original data of the operation associated with an error. This key is only present in the `AFURLResponseSerializationErrorDomain`.
  */
-FOUNDATION_EXPORT NSString * const AFNetworkingOperationFailingURLResponseErrorKey;
+FOUNDATION_EXPORT NSString * const JiaAFNetworkingOperationFailingURLResponseErrorKey;
 
-FOUNDATION_EXPORT NSString * const AFNetworkingOperationFailingURLResponseDataErrorKey;
+FOUNDATION_EXPORT NSString * const JiaAFNetworkingOperationFailingURLResponseDataErrorKey;
 
 NS_ASSUME_NONNULL_END

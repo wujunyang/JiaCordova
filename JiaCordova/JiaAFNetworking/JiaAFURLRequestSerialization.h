@@ -44,7 +44,7 @@ NS_ASSUME_NONNULL_BEGIN
  
  @return The percent-escaped string.
  */
-FOUNDATION_EXPORT NSString * AFPercentEscapedStringFromString(NSString *string);
+FOUNDATION_EXPORT NSString * JiaAFPercentEscapedStringFromString(NSString *string);
 
 /**
  A helper method to generate encoded url query parameters for appending to the end of a URL.
@@ -53,14 +53,14 @@ FOUNDATION_EXPORT NSString * AFPercentEscapedStringFromString(NSString *string);
 
  @return A url encoded query string
  */
-FOUNDATION_EXPORT NSString * AFQueryStringFromParameters(NSDictionary *parameters);
+FOUNDATION_EXPORT NSString * JiaAFQueryStringFromParameters(NSDictionary *parameters);
 
 /**
  The `AFURLRequestSerialization` protocol is adopted by an object that encodes parameters for a specified HTTP requests. Request serializers may encode parameters as query strings, HTTP bodies, setting the appropriate HTTP header fields as necessary.
 
  For example, a JSON request serializer may set the HTTP body of the request to a JSON representation, and set the `Content-Type` HTTP header field value to `application/json`.
  */
-@protocol AFURLRequestSerialization <NSObject, NSSecureCoding, NSCopying>
+@protocol JiaAFURLRequestSerialization <NSObject, NSSecureCoding, NSCopying>
 
 /**
  Returns a request with the specified parameters encoded into a copy of the original request.
@@ -82,18 +82,18 @@ FOUNDATION_EXPORT NSString * AFQueryStringFromParameters(NSDictionary *parameter
 /**
 
  */
-typedef NS_ENUM(NSUInteger, AFHTTPRequestQueryStringSerializationStyle) {
+typedef NS_ENUM(NSUInteger, JiaAFHTTPRequestQueryStringSerializationStyle) {
     AFHTTPRequestQueryStringDefaultStyle = 0,
 };
 
-@protocol AFMultipartFormData;
+@protocol JiaAFMultipartFormData;
 
 /**
  `AFHTTPRequestSerializer` conforms to the `AFURLRequestSerialization` & `AFURLResponseSerialization` protocols, offering a concrete base implementation of query string / URL form-encoded parameter serialization and default request headers, as well as response status code and content type validation.
 
  Any request or response serializer dealing with HTTP is encouraged to subclass `AFHTTPRequestSerializer` in order to ensure consistent default behavior.
  */
-@interface AFHTTPRequestSerializer : NSObject <AFURLRequestSerialization>
+@interface JiaAFHTTPRequestSerializer : NSObject <JiaAFURLRequestSerialization>
 
 /**
  The string encoding used to serialize parameters. `NSUTF8StringEncoding` by default.
@@ -209,7 +209,7 @@ forHTTPHeaderField:(NSString *)field;
 
  @see AFHTTPRequestQueryStringSerializationStyle
  */
-- (void)setQueryStringSerializationWithStyle:(AFHTTPRequestQueryStringSerializationStyle)style;
+- (void)setQueryStringSerializationWithStyle:(JiaAFHTTPRequestQueryStringSerializationStyle)style;
 
 /**
  Set the a custom method of query string serialization according to the specified block.
@@ -255,7 +255,7 @@ forHTTPHeaderField:(NSString *)field;
 - (NSMutableURLRequest *)multipartFormRequestWithMethod:(NSString *)method
                                               URLString:(NSString *)URLString
                                              parameters:(nullable NSDictionary <NSString *, id> *)parameters
-                              constructingBodyWithBlock:(nullable void (^)(id <AFMultipartFormData> formData))block
+                              constructingBodyWithBlock:(nullable void (^)(id <JiaAFMultipartFormData> formData))block
                                                   error:(NSError * _Nullable __autoreleasing *)error;
 
 /**
@@ -280,7 +280,7 @@ forHTTPHeaderField:(NSString *)field;
 /**
  The `AFMultipartFormData` protocol defines the methods supported by the parameter in the block argument of `AFHTTPRequestSerializer -multipartFormRequestWithMethod:URLString:parameters:constructingBodyWithBlock:`.
  */
-@protocol AFMultipartFormData
+@protocol JiaAFMultipartFormData
 
 /**
  Appends the HTTP header `Content-Disposition: file; filename=#{generated filename}; name=#{name}"` and `Content-Type: #{generated mimeType}`, followed by the encoded file data and the multipart form boundary.
@@ -380,7 +380,7 @@ forHTTPHeaderField:(NSString *)field;
 /**
  `AFJSONRequestSerializer` is a subclass of `AFHTTPRequestSerializer` that encodes parameters as JSON using `NSJSONSerialization`, setting the `Content-Type` of the encoded request to `application/json`.
  */
-@interface AFJSONRequestSerializer : AFHTTPRequestSerializer
+@interface JiaAFJSONRequestSerializer : JiaAFHTTPRequestSerializer
 
 /**
  Options for writing the request JSON data from Foundation objects. For possible values, see the `NSJSONSerialization` documentation section "NSJSONWritingOptions". `0` by default.
@@ -401,7 +401,7 @@ forHTTPHeaderField:(NSString *)field;
 /**
  `AFPropertyListRequestSerializer` is a subclass of `AFHTTPRequestSerializer` that encodes parameters as JSON using `NSPropertyListSerializer`, setting the `Content-Type` of the encoded request to `application/x-plist`.
  */
-@interface AFPropertyListRequestSerializer : AFHTTPRequestSerializer
+@interface JiaAFPropertyListRequestSerializer : JiaAFHTTPRequestSerializer
 
 /**
  The property list format. Possible values are described in "NSPropertyListFormat".
@@ -444,7 +444,7 @@ forHTTPHeaderField:(NSString *)field;
  `AFURLRequestSerializationErrorDomain`
  AFURLRequestSerializer errors. Error codes for `AFURLRequestSerializationErrorDomain` correspond to codes in `NSURLErrorDomain`.
  */
-FOUNDATION_EXPORT NSString * const AFURLRequestSerializationErrorDomain;
+FOUNDATION_EXPORT NSString * const JiaAFURLRequestSerializationErrorDomain;
 
 /**
  ## User info dictionary keys
@@ -458,7 +458,7 @@ FOUNDATION_EXPORT NSString * const AFURLRequestSerializationErrorDomain;
  `AFNetworkingOperationFailingURLRequestErrorKey`
  The corresponding value is an `NSURLRequest` containing the request of the operation associated with an error. This key is only present in the `AFURLRequestSerializationErrorDomain`.
  */
-FOUNDATION_EXPORT NSString * const AFNetworkingOperationFailingURLRequestErrorKey;
+FOUNDATION_EXPORT NSString * const JiaAFNetworkingOperationFailingURLRequestErrorKey;
 
 /**
  ## Throttling Bandwidth for HTTP Request Input Streams
@@ -473,7 +473,7 @@ FOUNDATION_EXPORT NSString * const AFNetworkingOperationFailingURLRequestErrorKe
  `kAFUploadStream3GSuggestedDelay`
  Duration of delay each time a packet is read. Equal to 0.2 seconds.
  */
-FOUNDATION_EXPORT NSUInteger const kAFUploadStream3GSuggestedPacketSize;
-FOUNDATION_EXPORT NSTimeInterval const kAFUploadStream3GSuggestedDelay;
+FOUNDATION_EXPORT NSUInteger const JiakAFUploadStream3GSuggestedPacketSize;
+FOUNDATION_EXPORT NSTimeInterval const JiakAFUploadStream3GSuggestedDelay;
 
 NS_ASSUME_NONNULL_END

@@ -19,22 +19,22 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-#import "AFNetworkActivityIndicatorManager.h"
+#import "JiaAFNetworkActivityIndicatorManager.h"
 
 #if TARGET_OS_IOS
-#import "AFURLSessionManager.h"
+#import "JiaAFURLSessionManager.h"
 
-typedef NS_ENUM(NSInteger, AFNetworkActivityManagerState) {
-    AFNetworkActivityManagerStateNotActive,
-    AFNetworkActivityManagerStateDelayingStart,
-    AFNetworkActivityManagerStateActive,
-    AFNetworkActivityManagerStateDelayingEnd
+typedef NS_ENUM(NSInteger, JiaAFNetworkActivityManagerState) {
+    JiaAFNetworkActivityManagerStateNotActive,
+    JiaAFNetworkActivityManagerStateDelayingStart,
+    JiaAFNetworkActivityManagerStateActive,
+    JiaAFNetworkActivityManagerStateDelayingEnd
 };
 
-static NSTimeInterval const kDefaultAFNetworkActivityManagerActivationDelay = 1.0;
-static NSTimeInterval const kDefaultAFNetworkActivityManagerCompletionDelay = 0.17;
+static NSTimeInterval const JiakDefaultAFNetworkActivityManagerActivationDelay = 1.0;
+static NSTimeInterval const JiakDefaultAFNetworkActivityManagerCompletionDelay = 0.17;
 
-static NSURLRequest * AFNetworkRequestFromNotification(NSNotification *notification) {
+static NSURLRequest * JiaAFNetworkRequestFromNotification(NSNotification *notification) {
     if ([[notification object] respondsToSelector:@selector(originalRequest)]) {
         return [(NSURLSessionTask *)[notification object] originalRequest];
     } else {
@@ -42,24 +42,24 @@ static NSURLRequest * AFNetworkRequestFromNotification(NSNotification *notificat
     }
 }
 
-typedef void (^AFNetworkActivityActionBlock)(BOOL networkActivityIndicatorVisible);
+typedef void (^JiaAFNetworkActivityActionBlock)(BOOL networkActivityIndicatorVisible);
 
-@interface AFNetworkActivityIndicatorManager ()
+@interface JiaAFNetworkActivityIndicatorManager ()
 @property (readwrite, nonatomic, assign) NSInteger activityCount;
 @property (readwrite, nonatomic, strong) NSTimer *activationDelayTimer;
 @property (readwrite, nonatomic, strong) NSTimer *completionDelayTimer;
 @property (readonly, nonatomic, getter = isNetworkActivityOccurring) BOOL networkActivityOccurring;
-@property (nonatomic, copy) AFNetworkActivityActionBlock networkActivityActionBlock;
-@property (nonatomic, assign) AFNetworkActivityManagerState currentState;
+@property (nonatomic, copy) JiaAFNetworkActivityActionBlock networkActivityActionBlock;
+@property (nonatomic, assign) JiaAFNetworkActivityManagerState currentState;
 @property (nonatomic, assign, getter=isNetworkActivityIndicatorVisible) BOOL networkActivityIndicatorVisible;
 
 - (void)updateCurrentStateForNetworkActivityChange;
 @end
 
-@implementation AFNetworkActivityIndicatorManager
+@implementation JiaAFNetworkActivityIndicatorManager
 
 + (instancetype)sharedManager {
-    static AFNetworkActivityIndicatorManager *_sharedManager = nil;
+    static JiaAFNetworkActivityIndicatorManager *_sharedManager = nil;
     static dispatch_once_t oncePredicate;
     dispatch_once(&oncePredicate, ^{
         _sharedManager = [[self alloc] init];
@@ -73,12 +73,12 @@ typedef void (^AFNetworkActivityActionBlock)(BOOL networkActivityIndicatorVisibl
     if (!self) {
         return nil;
     }
-    self.currentState = AFNetworkActivityManagerStateNotActive;
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(networkRequestDidStart:) name:AFNetworkingTaskDidResumeNotification object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(networkRequestDidFinish:) name:AFNetworkingTaskDidSuspendNotification object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(networkRequestDidFinish:) name:AFNetworkingTaskDidCompleteNotification object:nil];
-    self.activationDelay = kDefaultAFNetworkActivityManagerActivationDelay;
-    self.completionDelay = kDefaultAFNetworkActivityManagerCompletionDelay;
+    self.currentState = JiaAFNetworkActivityManagerStateNotActive;
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(networkRequestDidStart:) name:JiaAFNetworkingTaskDidResumeNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(networkRequestDidFinish:) name:JiaAFNetworkingTaskDidSuspendNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(networkRequestDidFinish:) name:JiaAFNetworkingTaskDidCompleteNotification object:nil];
+    self.activationDelay = JiakDefaultAFNetworkActivityManagerActivationDelay;
+    self.completionDelay = JiakDefaultAFNetworkActivityManagerCompletionDelay;
 
     return self;
 }
@@ -93,7 +93,7 @@ typedef void (^AFNetworkActivityActionBlock)(BOOL networkActivityIndicatorVisibl
 - (void)setEnabled:(BOOL)enabled {
     _enabled = enabled;
     if (enabled == NO) {
-        [self setCurrentState:AFNetworkActivityManagerStateNotActive];
+        [self setCurrentState:JiaAFNetworkActivityManagerStateNotActive];
     }
 }
 
@@ -160,37 +160,37 @@ typedef void (^AFNetworkActivityActionBlock)(BOOL networkActivityIndicatorVisibl
 }
 
 - (void)networkRequestDidStart:(NSNotification *)notification {
-    if ([AFNetworkRequestFromNotification(notification) URL]) {
+    if ([JiaAFNetworkRequestFromNotification(notification) URL]) {
         [self incrementActivityCount];
     }
 }
 
 - (void)networkRequestDidFinish:(NSNotification *)notification {
-    if ([AFNetworkRequestFromNotification(notification) URL]) {
+    if ([JiaAFNetworkRequestFromNotification(notification) URL]) {
         [self decrementActivityCount];
     }
 }
 
 #pragma mark - Internal State Management
-- (void)setCurrentState:(AFNetworkActivityManagerState)currentState {
+- (void)setCurrentState:(JiaAFNetworkActivityManagerState)currentState {
     @synchronized(self) {
         if (_currentState != currentState) {
             [self willChangeValueForKey:@"currentState"];
             _currentState = currentState;
             switch (currentState) {
-                case AFNetworkActivityManagerStateNotActive:
+                case JiaAFNetworkActivityManagerStateNotActive:
                     [self cancelActivationDelayTimer];
                     [self cancelCompletionDelayTimer];
                     [self setNetworkActivityIndicatorVisible:NO];
                     break;
-                case AFNetworkActivityManagerStateDelayingStart:
+                case JiaAFNetworkActivityManagerStateDelayingStart:
                     [self startActivationDelayTimer];
                     break;
-                case AFNetworkActivityManagerStateActive:
+                case JiaAFNetworkActivityManagerStateActive:
                     [self cancelCompletionDelayTimer];
                     [self setNetworkActivityIndicatorVisible:YES];
                     break;
-                case AFNetworkActivityManagerStateDelayingEnd:
+                case JiaAFNetworkActivityManagerStateDelayingEnd:
                     [self startCompletionDelayTimer];
                     break;
             }
@@ -202,22 +202,22 @@ typedef void (^AFNetworkActivityActionBlock)(BOOL networkActivityIndicatorVisibl
 - (void)updateCurrentStateForNetworkActivityChange {
     if (self.enabled) {
         switch (self.currentState) {
-            case AFNetworkActivityManagerStateNotActive:
+            case JiaAFNetworkActivityManagerStateNotActive:
                 if (self.isNetworkActivityOccurring) {
-                    [self setCurrentState:AFNetworkActivityManagerStateDelayingStart];
+                    [self setCurrentState:JiaAFNetworkActivityManagerStateDelayingStart];
                 }
                 break;
-            case AFNetworkActivityManagerStateDelayingStart:
+            case JiaAFNetworkActivityManagerStateDelayingStart:
                 //No op. Let the delay timer finish out.
                 break;
-            case AFNetworkActivityManagerStateActive:
+            case JiaAFNetworkActivityManagerStateActive:
                 if (!self.isNetworkActivityOccurring) {
-                    [self setCurrentState:AFNetworkActivityManagerStateDelayingEnd];
+                    [self setCurrentState:JiaAFNetworkActivityManagerStateDelayingEnd];
                 }
                 break;
-            case AFNetworkActivityManagerStateDelayingEnd:
+            case JiaAFNetworkActivityManagerStateDelayingEnd:
                 if (self.isNetworkActivityOccurring) {
-                    [self setCurrentState:AFNetworkActivityManagerStateActive];
+                    [self setCurrentState:JiaAFNetworkActivityManagerStateActive];
                 }
                 break;
         }
@@ -232,9 +232,9 @@ typedef void (^AFNetworkActivityActionBlock)(BOOL networkActivityIndicatorVisibl
 
 - (void)activationDelayTimerFired {
     if (self.networkActivityOccurring) {
-        [self setCurrentState:AFNetworkActivityManagerStateActive];
+        [self setCurrentState:JiaAFNetworkActivityManagerStateActive];
     } else {
-        [self setCurrentState:AFNetworkActivityManagerStateNotActive];
+        [self setCurrentState:JiaAFNetworkActivityManagerStateNotActive];
     }
 }
 
@@ -245,7 +245,7 @@ typedef void (^AFNetworkActivityActionBlock)(BOOL networkActivityIndicatorVisibl
 }
 
 - (void)completionDelayTimerFired {
-    [self setCurrentState:AFNetworkActivityManagerStateNotActive];
+    [self setCurrentState:JiaAFNetworkActivityManagerStateNotActive];
 }
 
 - (void)cancelActivationDelayTimer {

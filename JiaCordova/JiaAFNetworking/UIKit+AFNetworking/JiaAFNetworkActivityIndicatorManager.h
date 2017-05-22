@@ -42,7 +42,7 @@ NS_ASSUME_NONNULL_BEGIN
  http://developer.apple.com/library/iOS/#documentation/UserExperience/Conceptual/MobileHIG/UIElementGuidelines/UIElementGuidelines.html#//apple_ref/doc/uid/TP40006556-CH13-SW44
  */
 NS_EXTENSION_UNAVAILABLE_IOS("Use view controller based solutions where appropriate instead.")
-@interface AFNetworkActivityIndicatorManager : NSObject
+@interface JiaAFNetworkActivityIndicatorManager : NSObject
 
 /**
  A Boolean value indicating whether the manager is enabled.

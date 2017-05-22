@@ -18,21 +18,13 @@
 		34FD29571ED272AE00230BE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34FD29551ED272AE00230BE3 /* LaunchScreen.storyboard */; };
 		34FD29621ED272AE00230BE3 /* JiaCordovaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FD29611ED272AE00230BE3 /* JiaCordovaTests.m */; };
 		34FD296D1ED272AF00230BE3 /* JiaCordovaUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FD296C1ED272AF00230BE3 /* JiaCordovaUITests.m */; };
-		34FD298B1ED27CD100230BE3 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FD297F1ED27CD100230BE3 /* AFHTTPSessionManager.m */; };
-		34FD298C1ED27CD100230BE3 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FD29821ED27CD100230BE3 /* AFNetworkReachabilityManager.m */; };
-		34FD298D1ED27CD100230BE3 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FD29841ED27CD100230BE3 /* AFSecurityPolicy.m */; };
-		34FD298E1ED27CD100230BE3 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FD29861ED27CD100230BE3 /* AFURLRequestSerialization.m */; };
-		34FD298F1ED27CD100230BE3 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FD29881ED27CD100230BE3 /* AFURLResponseSerialization.m */; };
-		34FD29901ED27CD100230BE3 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FD298A1ED27CD100230BE3 /* AFURLSessionManager.m */; };
-		34FD29A51ED27D0300230BE3 /* AFAutoPurgingImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FD29921ED27D0300230BE3 /* AFAutoPurgingImageCache.m */; };
-		34FD29A61ED27D0300230BE3 /* AFImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FD29941ED27D0300230BE3 /* AFImageDownloader.m */; };
-		34FD29A71ED27D0300230BE3 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FD29961ED27D0300230BE3 /* AFNetworkActivityIndicatorManager.m */; };
-		34FD29A81ED27D0300230BE3 /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FD29981ED27D0300230BE3 /* UIActivityIndicatorView+AFNetworking.m */; };
-		34FD29A91ED27D0300230BE3 /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FD299A1ED27D0300230BE3 /* UIButton+AFNetworking.m */; };
-		34FD29AA1ED27D0300230BE3 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FD299D1ED27D0300230BE3 /* UIImageView+AFNetworking.m */; };
-		34FD29AB1ED27D0300230BE3 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FD29A01ED27D0300230BE3 /* UIProgressView+AFNetworking.m */; };
-		34FD29AC1ED27D0300230BE3 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FD29A21ED27D0300230BE3 /* UIRefreshControl+AFNetworking.m */; };
-		34FD29AD1ED27D0300230BE3 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FD29A41ED27D0300230BE3 /* UIWebView+AFNetworking.m */; };
+		34FD298B1ED27CD100230BE3 /* JiaAFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FD297F1ED27CD100230BE3 /* JiaAFHTTPSessionManager.m */; };
+		34FD298C1ED27CD100230BE3 /* JiaAFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FD29821ED27CD100230BE3 /* JiaAFNetworkReachabilityManager.m */; };
+		34FD298D1ED27CD100230BE3 /* JiaAFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FD29841ED27CD100230BE3 /* JiaAFSecurityPolicy.m */; };
+		34FD298E1ED27CD100230BE3 /* JiaAFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FD29861ED27CD100230BE3 /* JiaAFURLRequestSerialization.m */; };
+		34FD298F1ED27CD100230BE3 /* JiaAFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FD29881ED27CD100230BE3 /* JiaAFURLResponseSerialization.m */; };
+		34FD29901ED27CD100230BE3 /* JiaAFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FD298A1ED27CD100230BE3 /* JiaAFURLSessionManager.m */; };
+		34FD29A71ED27D0300230BE3 /* JiaAFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FD29961ED27D0300230BE3 /* JiaAFNetworkActivityIndicatorManager.m */; };
 		34FD29B01ED27D9000230BE3 /* config.xml in Resources */ = {isa = PBXBuildFile; fileRef = 34FD29AE1ED27D9000230BE3 /* config.xml */; };
 		34FD29B11ED27D9000230BE3 /* www in Resources */ = {isa = PBXBuildFile; fileRef = 34FD29AF1ED27D9000230BE3 /* www */; };
 /* End PBXBuildFile section */
@@ -76,41 +68,24 @@
 		34FD29681ED272AE00230BE3 /* JiaCordovaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JiaCordovaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		34FD296C1ED272AF00230BE3 /* JiaCordovaUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JiaCordovaUITests.m; sourceTree = "<group>"; };
 		34FD296E1ED272AF00230BE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		34FD297E1ED27CD100230BE3 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
-		34FD297F1ED27CD100230BE3 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
-		34FD29801ED27CD100230BE3 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
-		34FD29811ED27CD100230BE3 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
-		34FD29821ED27CD100230BE3 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
-		34FD29831ED27CD100230BE3 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
-		34FD29841ED27CD100230BE3 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
-		34FD29851ED27CD100230BE3 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
-		34FD29861ED27CD100230BE3 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
-		34FD29871ED27CD100230BE3 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
-		34FD29881ED27CD100230BE3 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
-		34FD29891ED27CD100230BE3 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
-		34FD298A1ED27CD100230BE3 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
-		34FD29911ED27D0300230BE3 /* AFAutoPurgingImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAutoPurgingImageCache.h; sourceTree = "<group>"; };
-		34FD29921ED27D0300230BE3 /* AFAutoPurgingImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFAutoPurgingImageCache.m; sourceTree = "<group>"; };
-		34FD29931ED27D0300230BE3 /* AFImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFImageDownloader.h; sourceTree = "<group>"; };
-		34FD29941ED27D0300230BE3 /* AFImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFImageDownloader.m; sourceTree = "<group>"; };
-		34FD29951ED27D0300230BE3 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
-		34FD29961ED27D0300230BE3 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
-		34FD29971ED27D0300230BE3 /* UIActivityIndicatorView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActivityIndicatorView+AFNetworking.h"; sourceTree = "<group>"; };
-		34FD29981ED27D0300230BE3 /* UIActivityIndicatorView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActivityIndicatorView+AFNetworking.m"; sourceTree = "<group>"; };
-		34FD29991ED27D0300230BE3 /* UIButton+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+AFNetworking.h"; sourceTree = "<group>"; };
-		34FD299A1ED27D0300230BE3 /* UIButton+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+AFNetworking.m"; sourceTree = "<group>"; };
-		34FD299B1ED27D0300230BE3 /* UIImage+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+AFNetworking.h"; sourceTree = "<group>"; };
-		34FD299C1ED27D0300230BE3 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
-		34FD299D1ED27D0300230BE3 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
-		34FD299E1ED27D0300230BE3 /* UIKit+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIKit+AFNetworking.h"; sourceTree = "<group>"; };
-		34FD299F1ED27D0300230BE3 /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
-		34FD29A01ED27D0300230BE3 /* UIProgressView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIProgressView+AFNetworking.m"; sourceTree = "<group>"; };
-		34FD29A11ED27D0300230BE3 /* UIRefreshControl+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIRefreshControl+AFNetworking.h"; sourceTree = "<group>"; };
-		34FD29A21ED27D0300230BE3 /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
-		34FD29A31ED27D0300230BE3 /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
-		34FD29A41ED27D0300230BE3 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
+		34FD297E1ED27CD100230BE3 /* JiaAFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JiaAFHTTPSessionManager.h; sourceTree = "<group>"; };
+		34FD297F1ED27CD100230BE3 /* JiaAFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JiaAFHTTPSessionManager.m; sourceTree = "<group>"; };
+		34FD29801ED27CD100230BE3 /* JiaAFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JiaAFNetworking.h; sourceTree = "<group>"; };
+		34FD29811ED27CD100230BE3 /* JiaAFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JiaAFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		34FD29821ED27CD100230BE3 /* JiaAFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JiaAFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		34FD29831ED27CD100230BE3 /* JiaAFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JiaAFSecurityPolicy.h; sourceTree = "<group>"; };
+		34FD29841ED27CD100230BE3 /* JiaAFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JiaAFSecurityPolicy.m; sourceTree = "<group>"; };
+		34FD29851ED27CD100230BE3 /* JiaAFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JiaAFURLRequestSerialization.h; sourceTree = "<group>"; };
+		34FD29861ED27CD100230BE3 /* JiaAFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JiaAFURLRequestSerialization.m; sourceTree = "<group>"; };
+		34FD29871ED27CD100230BE3 /* JiaAFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JiaAFURLResponseSerialization.h; sourceTree = "<group>"; };
+		34FD29881ED27CD100230BE3 /* JiaAFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JiaAFURLResponseSerialization.m; sourceTree = "<group>"; };
+		34FD29891ED27CD100230BE3 /* JiaAFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JiaAFURLSessionManager.h; sourceTree = "<group>"; };
+		34FD298A1ED27CD100230BE3 /* JiaAFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JiaAFURLSessionManager.m; sourceTree = "<group>"; };
+		34FD29951ED27D0300230BE3 /* JiaAFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JiaAFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
+		34FD29961ED27D0300230BE3 /* JiaAFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JiaAFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
 		34FD29AE1ED27D9000230BE3 /* config.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = config.xml; sourceTree = "<group>"; };
 		34FD29AF1ED27D9000230BE3 /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
+		34FD29B21ED2876C00230BE3 /* JiaCordova.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JiaCordova.h; sourceTree = "<group>"; };
 		5FB7D4949989B086F941088C /* Pods-JiaCordova.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JiaCordova.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JiaCordova/Pods-JiaCordova.debug.xcconfig"; sourceTree = "<group>"; };
 		EF0939B271FA3DDEC2F622AA /* Pods-JiaCordova.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JiaCordova.release.xcconfig"; path = "Pods/Target Support Files/Pods-JiaCordova/Pods-JiaCordova.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -215,19 +190,19 @@
 		34FD297A1ED2756200230BE3 /* JiaAFNetworking */ = {
 			isa = PBXGroup;
 			children = (
-				34FD297E1ED27CD100230BE3 /* AFHTTPSessionManager.h */,
-				34FD297F1ED27CD100230BE3 /* AFHTTPSessionManager.m */,
-				34FD29801ED27CD100230BE3 /* AFNetworking.h */,
-				34FD29811ED27CD100230BE3 /* AFNetworkReachabilityManager.h */,
-				34FD29821ED27CD100230BE3 /* AFNetworkReachabilityManager.m */,
-				34FD29831ED27CD100230BE3 /* AFSecurityPolicy.h */,
-				34FD29841ED27CD100230BE3 /* AFSecurityPolicy.m */,
-				34FD29851ED27CD100230BE3 /* AFURLRequestSerialization.h */,
-				34FD29861ED27CD100230BE3 /* AFURLRequestSerialization.m */,
-				34FD29871ED27CD100230BE3 /* AFURLResponseSerialization.h */,
-				34FD29881ED27CD100230BE3 /* AFURLResponseSerialization.m */,
-				34FD29891ED27CD100230BE3 /* AFURLSessionManager.h */,
-				34FD298A1ED27CD100230BE3 /* AFURLSessionManager.m */,
+				34FD297E1ED27CD100230BE3 /* JiaAFHTTPSessionManager.h */,
+				34FD297F1ED27CD100230BE3 /* JiaAFHTTPSessionManager.m */,
+				34FD29801ED27CD100230BE3 /* JiaAFNetworking.h */,
+				34FD29811ED27CD100230BE3 /* JiaAFNetworkReachabilityManager.h */,
+				34FD29821ED27CD100230BE3 /* JiaAFNetworkReachabilityManager.m */,
+				34FD29831ED27CD100230BE3 /* JiaAFSecurityPolicy.h */,
+				34FD29841ED27CD100230BE3 /* JiaAFSecurityPolicy.m */,
+				34FD29851ED27CD100230BE3 /* JiaAFURLRequestSerialization.h */,
+				34FD29861ED27CD100230BE3 /* JiaAFURLRequestSerialization.m */,
+				34FD29871ED27CD100230BE3 /* JiaAFURLResponseSerialization.h */,
+				34FD29881ED27CD100230BE3 /* JiaAFURLResponseSerialization.m */,
+				34FD29891ED27CD100230BE3 /* JiaAFURLSessionManager.h */,
+				34FD298A1ED27CD100230BE3 /* JiaAFURLSessionManager.m */,
 				34FD297D1ED27C7B00230BE3 /* UIKit+AFNetworking */,
 			);
 			path = JiaAFNetworking;
@@ -238,6 +213,7 @@
 			children = (
 				34FD29AE1ED27D9000230BE3 /* config.xml */,
 				34FD29AF1ED27D9000230BE3 /* www */,
+				34FD29B21ED2876C00230BE3 /* JiaCordova.h */,
 			);
 			path = JiaCordovaConfig;
 			sourceTree = "<group>";
@@ -252,26 +228,8 @@
 		34FD297D1ED27C7B00230BE3 /* UIKit+AFNetworking */ = {
 			isa = PBXGroup;
 			children = (
-				34FD29911ED27D0300230BE3 /* AFAutoPurgingImageCache.h */,
-				34FD29921ED27D0300230BE3 /* AFAutoPurgingImageCache.m */,
-				34FD29931ED27D0300230BE3 /* AFImageDownloader.h */,
-				34FD29941ED27D0300230BE3 /* AFImageDownloader.m */,
-				34FD29951ED27D0300230BE3 /* AFNetworkActivityIndicatorManager.h */,
-				34FD29961ED27D0300230BE3 /* AFNetworkActivityIndicatorManager.m */,
-				34FD29971ED27D0300230BE3 /* UIActivityIndicatorView+AFNetworking.h */,
-				34FD29981ED27D0300230BE3 /* UIActivityIndicatorView+AFNetworking.m */,
-				34FD29991ED27D0300230BE3 /* UIButton+AFNetworking.h */,
-				34FD299A1ED27D0300230BE3 /* UIButton+AFNetworking.m */,
-				34FD299B1ED27D0300230BE3 /* UIImage+AFNetworking.h */,
-				34FD299C1ED27D0300230BE3 /* UIImageView+AFNetworking.h */,
-				34FD299D1ED27D0300230BE3 /* UIImageView+AFNetworking.m */,
-				34FD299E1ED27D0300230BE3 /* UIKit+AFNetworking.h */,
-				34FD299F1ED27D0300230BE3 /* UIProgressView+AFNetworking.h */,
-				34FD29A01ED27D0300230BE3 /* UIProgressView+AFNetworking.m */,
-				34FD29A11ED27D0300230BE3 /* UIRefreshControl+AFNetworking.h */,
-				34FD29A21ED27D0300230BE3 /* UIRefreshControl+AFNetworking.m */,
-				34FD29A31ED27D0300230BE3 /* UIWebView+AFNetworking.h */,
-				34FD29A41ED27D0300230BE3 /* UIWebView+AFNetworking.m */,
+				34FD29951ED27D0300230BE3 /* JiaAFNetworkActivityIndicatorManager.h */,
+				34FD29961ED27D0300230BE3 /* JiaAFNetworkActivityIndicatorManager.m */,
 			);
 			path = "UIKit+AFNetworking";
 			sourceTree = "<group>";
@@ -479,25 +437,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34FD298E1ED27CD100230BE3 /* AFURLRequestSerialization.m in Sources */,
-				34FD29AA1ED27D0300230BE3 /* UIImageView+AFNetworking.m in Sources */,
+				34FD298E1ED27CD100230BE3 /* JiaAFURLRequestSerialization.m in Sources */,
 				34FD294C1ED272AE00230BE3 /* DataViewController.m in Sources */,
 				34FD29461ED272AE00230BE3 /* AppDelegate.m in Sources */,
-				34FD29AB1ED27D0300230BE3 /* UIProgressView+AFNetworking.m in Sources */,
-				34FD29A61ED27D0300230BE3 /* AFImageDownloader.m in Sources */,
-				34FD29A51ED27D0300230BE3 /* AFAutoPurgingImageCache.m in Sources */,
 				34FD294F1ED272AE00230BE3 /* ModelController.m in Sources */,
-				34FD29A91ED27D0300230BE3 /* UIButton+AFNetworking.m in Sources */,
-				34FD29A81ED27D0300230BE3 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
-				34FD29901ED27CD100230BE3 /* AFURLSessionManager.m in Sources */,
-				34FD29AC1ED27D0300230BE3 /* UIRefreshControl+AFNetworking.m in Sources */,
-				34FD29AD1ED27D0300230BE3 /* UIWebView+AFNetworking.m in Sources */,
-				34FD298F1ED27CD100230BE3 /* AFURLResponseSerialization.m in Sources */,
-				34FD298C1ED27CD100230BE3 /* AFNetworkReachabilityManager.m in Sources */,
-				34FD298D1ED27CD100230BE3 /* AFSecurityPolicy.m in Sources */,
-				34FD298B1ED27CD100230BE3 /* AFHTTPSessionManager.m in Sources */,
+				34FD29901ED27CD100230BE3 /* JiaAFURLSessionManager.m in Sources */,
+				34FD298F1ED27CD100230BE3 /* JiaAFURLResponseSerialization.m in Sources */,
+				34FD298C1ED27CD100230BE3 /* JiaAFNetworkReachabilityManager.m in Sources */,
+				34FD298D1ED27CD100230BE3 /* JiaAFSecurityPolicy.m in Sources */,
+				34FD298B1ED27CD100230BE3 /* JiaAFHTTPSessionManager.m in Sources */,
 				34FD29431ED272AE00230BE3 /* main.m in Sources */,
-				34FD29A71ED27D0300230BE3 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				34FD29A71ED27D0300230BE3 /* JiaAFNetworkActivityIndicatorManager.m in Sources */,
 				34FD29491ED272AE00230BE3 /* RootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
