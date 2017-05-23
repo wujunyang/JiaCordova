@@ -34,6 +34,7 @@ PODS:
     - Cordova (>= 4.3.0)
   - CordovaPlugin-console (0.2.10):
     - Cordova (>= 3.0.0)
+  - SSZipArchive (1.8.1)
 
 DEPENDENCIES:
   - Cordova
@@ -53,6 +54,7 @@ DEPENDENCIES:
   - cordova-plugin-statusbar
   - cordova-plugin-vibration
   - CordovaPlugin-console
+  - SSZipArchive
 
 SPEC CHECKSUMS:
   Cordova: 9dda9e4a521d8f0af561cba93e59f142ed7b306f
@@ -72,7 +74,8 @@ SPEC CHECKSUMS:
   cordova-plugin-statusbar: 4e7f07a6063ff116e40140dae9963890637da214
   cordova-plugin-vibration: ba02ccf635f9ac6f394a45aa07cda015c0a1f114
   CordovaPlugin-console: aeb6015a9830edaaf8158a6b49f18189ebf38aa5
+  SSZipArchive: 04547dfa448be5ed7ecbaf7eaf8a6e9eb9b42997
 
-PODFILE CHECKSUM: 509e93ad01282d152d98329369ce497574525a28
+PODFILE CHECKSUM: aeb42a43f40802c383501c4605684e0737ab2969
 
 COCOAPODS: 1.2.0.beta.1

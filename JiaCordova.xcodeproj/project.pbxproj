@@ -36,6 +36,8 @@
 		34FD29CF1ED2AABF00230BE3 /* JiaYTKNetworkConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FD29C41ED2AABF00230BE3 /* JiaYTKNetworkConfig.m */; };
 		34FD29D01ED2AABF00230BE3 /* JiaYTKNetworkPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FD29C61ED2AABF00230BE3 /* JiaYTKNetworkPrivate.m */; };
 		34FD29D11ED2AABF00230BE3 /* JiaYTKRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FD29C81ED2AABF00230BE3 /* JiaYTKRequest.m */; };
+		34FD29D61ED2E03D00230BE3 /* JiaCordovaFileManage.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FD29D51ED2E03D00230BE3 /* JiaCordovaFileManage.m */; };
+		34FD29D91ED2E29500230BE3 /* JiaCordovaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FD29D81ED2E29500230BE3 /* JiaCordovaViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,7 +94,6 @@
 		34FD298A1ED27CD100230BE3 /* JiaAFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JiaAFURLSessionManager.m; sourceTree = "<group>"; };
 		34FD29AE1ED27D9000230BE3 /* config.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = config.xml; sourceTree = "<group>"; };
 		34FD29AF1ED27D9000230BE3 /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
-		34FD29B21ED2876C00230BE3 /* JiaCordova.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JiaCordova.h; sourceTree = "<group>"; };
 		34FD29B31ED2AA2800230BE3 /* JiaAFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JiaAFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
 		34FD29B41ED2AA2800230BE3 /* JiaAFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JiaAFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
 		34FD29B61ED2AABF00230BE3 /* JiaYTKBaseRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JiaYTKBaseRequest.h; sourceTree = "<group>"; };
@@ -114,6 +115,11 @@
 		34FD29C61ED2AABF00230BE3 /* JiaYTKNetworkPrivate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JiaYTKNetworkPrivate.m; sourceTree = "<group>"; };
 		34FD29C71ED2AABF00230BE3 /* JiaYTKRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JiaYTKRequest.h; sourceTree = "<group>"; };
 		34FD29C81ED2AABF00230BE3 /* JiaYTKRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JiaYTKRequest.m; sourceTree = "<group>"; };
+		34FD29D31ED2D98000230BE3 /* JiaCordova.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JiaCordova.h; sourceTree = "<group>"; };
+		34FD29D41ED2E03D00230BE3 /* JiaCordovaFileManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JiaCordovaFileManage.h; sourceTree = "<group>"; };
+		34FD29D51ED2E03D00230BE3 /* JiaCordovaFileManage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JiaCordovaFileManage.m; sourceTree = "<group>"; };
+		34FD29D71ED2E29500230BE3 /* JiaCordovaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JiaCordovaViewController.h; sourceTree = "<group>"; };
+		34FD29D81ED2E29500230BE3 /* JiaCordovaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JiaCordovaViewController.m; sourceTree = "<group>"; };
 		5FB7D4949989B086F941088C /* Pods-JiaCordova.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JiaCordova.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JiaCordova/Pods-JiaCordova.debug.xcconfig"; sourceTree = "<group>"; };
 		EF0939B271FA3DDEC2F622AA /* Pods-JiaCordova.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JiaCordova.release.xcconfig"; path = "Pods/Target Support Files/Pods-JiaCordova/Pods-JiaCordova.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -169,6 +175,8 @@
 		34FD29401ED272AE00230BE3 /* JiaCordova */ = {
 			isa = PBXGroup;
 			children = (
+				34FD29DA1ED2E65D00230BE3 /* JiaCordovaPlugin */,
+				34FD29D21ED2D93C00230BE3 /* JiaCordovaManager */,
 				34FD297C1ED27A8400230BE3 /* JiaNetwork */,
 				34FD297B1ED275B000230BE3 /* JiaCordovaConfig */,
 				34FD297A1ED2756200230BE3 /* JiaAFNetworking */,
@@ -242,7 +250,6 @@
 			children = (
 				34FD29AE1ED27D9000230BE3 /* config.xml */,
 				34FD29AF1ED27D9000230BE3 /* www */,
-				34FD29B21ED2876C00230BE3 /* JiaCordova.h */,
 			);
 			path = JiaCordovaConfig;
 			sourceTree = "<group>";
@@ -271,6 +278,25 @@
 				34FD29C81ED2AABF00230BE3 /* JiaYTKRequest.m */,
 			);
 			path = JiaNetwork;
+			sourceTree = "<group>";
+		};
+		34FD29D21ED2D93C00230BE3 /* JiaCordovaManager */ = {
+			isa = PBXGroup;
+			children = (
+				34FD29D31ED2D98000230BE3 /* JiaCordova.h */,
+				34FD29D41ED2E03D00230BE3 /* JiaCordovaFileManage.h */,
+				34FD29D51ED2E03D00230BE3 /* JiaCordovaFileManage.m */,
+				34FD29D71ED2E29500230BE3 /* JiaCordovaViewController.h */,
+				34FD29D81ED2E29500230BE3 /* JiaCordovaViewController.m */,
+			);
+			path = JiaCordovaManager;
+			sourceTree = "<group>";
+		};
+		34FD29DA1ED2E65D00230BE3 /* JiaCordovaPlugin */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = JiaCordovaPlugin;
 			sourceTree = "<group>";
 		};
 		44EC89B564374BF15BE9EB06 /* Frameworks */ = {
@@ -483,7 +509,9 @@
 				34FD294C1ED272AE00230BE3 /* DataViewController.m in Sources */,
 				34FD29461ED272AE00230BE3 /* AppDelegate.m in Sources */,
 				34FD294F1ED272AE00230BE3 /* ModelController.m in Sources */,
+				34FD29D91ED2E29500230BE3 /* JiaCordovaViewController.m in Sources */,
 				34FD29901ED27CD100230BE3 /* JiaAFURLSessionManager.m in Sources */,
+				34FD29D61ED2E03D00230BE3 /* JiaCordovaFileManage.m in Sources */,
 				34FD298F1ED27CD100230BE3 /* JiaAFURLResponseSerialization.m in Sources */,
 				34FD298C1ED27CD100230BE3 /* JiaAFNetworkReachabilityManager.m in Sources */,
 				34FD29D11ED2AABF00230BE3 /* JiaYTKRequest.m in Sources */,

@@ -2,6 +2,8 @@ platform :ios, ‘8.0’
 
 target ‘JiaCordova’ do
     
+    # 解压ZIP包
+    pod 'SSZipArchive'
     # Cordova 库 (iOS 8.0最新版)
     pod 'Cordova'
     
