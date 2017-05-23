@@ -9,5 +9,8 @@
 #ifndef JiaCordova_h
 #define JiaCordova_h
 
+#import "JiaCordovaSandBoxHelper.h"
+#import "JiaCordovaFileManage.h"
+#import "JiaCordovaViewController.h"
 
 #endif /* JiaCordova_h */

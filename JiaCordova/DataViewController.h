@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JiaCordova.h"
 
-@interface DataViewController : UIViewController
+@interface DataViewController : JiaCordovaViewController
 
 @property (strong, nonatomic) IBOutlet UILabel *dataLabel;
 @property (strong, nonatomic) id dataObject;
