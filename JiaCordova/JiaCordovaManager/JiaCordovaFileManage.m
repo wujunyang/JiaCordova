@@ -14,9 +14,10 @@
 
 @interface JiaCordovaFileManage()
 
+//成功回调
 @property(nonatomic,copy)successBlockHandle successHandle;
+//失败回调
 @property(nonatomic,copy)failBlockHanlde failHandle;
-
 //下载路径
 @property(nonatomic,copy)NSString *downloadUrl;
 //解压的文件夹名
