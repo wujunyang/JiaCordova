@@ -45,7 +45,7 @@ end
 
 s.subspec 'JiaMBProgressHUD' do |ss|
 ss.source_files = 'JiaCordova/JiaMBProgressHUD/**/*.{h,m}'
-ss.resources  = "JiaCordova/JiaMBProgressHUD/*"
+ss.resources  = "JiaCordova/JiaMBProgressHUD/**/*.bundle"
 end
 
 
