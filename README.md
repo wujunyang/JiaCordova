@@ -15,7 +15,7 @@ Cordova提供了一组设备相关的API，通过这组API，移动应用能够�
 
 ## JiaCordova运用
 
-####  引用方式
+####  一：引用方式
 
 ```obj-c
 
@@ -26,7 +26,7 @@ pod 'JiaCordova'
 只要简单运用Pod指令并可以引入，目前iOS最低版本支持为8.0
 
 
-####  资源文件引入
+####  二：资源文件引入
 
 目前在插件中有两种方式进行引入资源文件（html页面、JS脚本、CCS文件等），都是以ZIP包进行存放；
 
@@ -62,7 +62,7 @@ pod 'JiaCordova'
 其中相应的参数类似第一种，而deleteZip是为了标识当解压成功后是否要对ZIP包进行删除；
 
 
-####  项目页面使用
+####  三：项目页面使用
 
 在插件中已经封装的一个控制器JiaCordovaViewController页面，对于一些常规的操作跟设置进行处理；只要简单让项目要做为Cordova的页面继承于它就可以；如下的代码实现：
 
@@ -97,7 +97,7 @@ pod 'JiaCordova'
 
 ```
 
-####  效果展现
+####  四：效果展现
 
 <img src="https://github.com/wujunyang/JiaCordova/blob/master/2.gif" width=200px height=300px></img>
 
