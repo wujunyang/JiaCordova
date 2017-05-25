@@ -99,7 +99,7 @@ pod 'JiaCordova'
 
 ####  效果展现
 
-<img src="https://github.com/wujunyang/JiaCordova/blob/master/1.gif” width=200px height=300px></img>
+<img src="https://github.com/wujunyang/JiaCordova/blob/master/1.gif" width=200px height=300px></img>
 
 
 ## 联系方式
