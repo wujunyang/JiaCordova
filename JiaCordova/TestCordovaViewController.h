@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "JiaCordova.h"
+#import "JiaCordovaHeader.h"
 
 @interface TestCordovaViewController : JiaCordovaViewController
 

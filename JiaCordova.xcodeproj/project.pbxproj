@@ -137,7 +137,7 @@
 		34FD29C61ED2AABF00230BE3 /* JiaYTKNetworkPrivate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JiaYTKNetworkPrivate.m; sourceTree = "<group>"; };
 		34FD29C71ED2AABF00230BE3 /* JiaYTKRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JiaYTKRequest.h; sourceTree = "<group>"; };
 		34FD29C81ED2AABF00230BE3 /* JiaYTKRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JiaYTKRequest.m; sourceTree = "<group>"; };
-		34FD29D31ED2D98000230BE3 /* JiaCordova.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JiaCordova.h; sourceTree = "<group>"; };
+		34FD29D31ED2D98000230BE3 /* JiaCordovaHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JiaCordovaHeader.h; sourceTree = "<group>"; };
 		34FD29D41ED2E03D00230BE3 /* JiaCordovaFileManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JiaCordovaFileManage.h; sourceTree = "<group>"; };
 		34FD29D51ED2E03D00230BE3 /* JiaCordovaFileManage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JiaCordovaFileManage.m; sourceTree = "<group>"; };
 		34FD29D71ED2E29500230BE3 /* JiaCordovaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JiaCordovaViewController.h; sourceTree = "<group>"; };
@@ -338,7 +338,7 @@
 		34FD29D21ED2D93C00230BE3 /* JiaCordovaManager */ = {
 			isa = PBXGroup;
 			children = (
-				34FD29D31ED2D98000230BE3 /* JiaCordova.h */,
+				34FD29D31ED2D98000230BE3 /* JiaCordovaHeader.h */,
 				34FD29D41ED2E03D00230BE3 /* JiaCordovaFileManage.h */,
 				34FD29D51ED2E03D00230BE3 /* JiaCordovaFileManage.m */,
 				34FD29D71ED2E29500230BE3 /* JiaCordovaViewController.h */,

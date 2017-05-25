@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "JiaCordova.h"
+#import "JiaCordovaHeader.h"
 
 @interface AppDelegate ()
 

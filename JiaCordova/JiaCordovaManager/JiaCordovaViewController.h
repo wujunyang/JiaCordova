@@ -6,7 +6,7 @@
 //  Copyright © 2017年 wujunyang. All rights reserved.
 //
 
-#import "CDV.h"
+#import <CDV.h>
 
 @interface JiaCordovaViewController : CDVViewController
 

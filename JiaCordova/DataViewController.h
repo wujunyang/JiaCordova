@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "JiaCordova.h"
 
 @interface DataViewController : UIViewController
 

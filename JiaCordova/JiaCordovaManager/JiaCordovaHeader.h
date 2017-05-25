@@ -6,8 +6,8 @@
 //  Copyright © 2017年 wujunyang. All rights reserved.
 //
 
-#ifndef JiaCordova_h
-#define JiaCordova_h
+#ifndef JiaCordovaHeader_h
+#define JiaCordovaHeader_h
 
 #import "JiaCordovaSandBoxHelper.h"
 #import "JiaCordovaFileManage.h"
