@@ -30,22 +30,22 @@ ss.dependency 'JiaCordova/JiaAFNetworking'
 ss.framework = "CFNetwork"
 end
 
-s.subspec 'JiaCordovaConfig' do |ss|
-ss.resources  = "JiaCordova/JiaCordovaConfig/*"
+s.subspec 'JiaMBProgressHUD' do |ss|
+ss.source_files = 'JiaCordova/JiaMBProgressHUD/**/*.{h,m}'
+ss.resources  = "JiaCordova/JiaMBProgressHUD/**/*.bundle"
 end
 
-s.subspec 'JiaCordovaManager' do |ss|
-ss.source_files = 'JiaCordova/JiaCordovaManager/**/*.{h,m}'
-ss.dependency 'SSZipArchive'
+s.subspec 'JiaCordovaConfig' do |ss|
+ss.resources  = "JiaCordova/JiaCordovaConfig/*"
 end
 
 s.subspec 'JiaCordovaPlugin' do |ss|
 ss.source_files = 'JiaCordova/JiaCordovaPlugin/**/*.{h,m}'
 end
 
-s.subspec 'JiaMBProgressHUD' do |ss|
-ss.source_files = 'JiaCordova/JiaMBProgressHUD/**/*.{h,m}'
-ss.resources  = "JiaCordova/JiaMBProgressHUD/**/*.bundle"
+s.subspec 'JiaCordovaManager' do |ss|
+ss.source_files = 'JiaCordova/JiaCordovaManager/**/*.{h,m}'
+ss.dependency 'SSZipArchive'
 end
 
 
