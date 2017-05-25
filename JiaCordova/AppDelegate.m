@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "JiaCordovaHeader.h"
+#import "DataViewController.h"
 
 @interface AppDelegate ()
 
@@ -27,11 +28,22 @@
         NSLog(@"失败");
     }];
     
+//    JiaCordovaFileManage *fileManager=[[JiaCordovaFileManage alloc]init];
+//    
 //    [fileManager loadFileWithUrl:@"http://test.qshmall.net:9090/html.zip" unZipFolderName:@"html" deleteZip:YES successBlock:^{
 //        
 //    } failBlock:^(NSString *errorInfo) {
 //        
 //    }];
+    
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor whiteColor];
+    DataViewController *logInVc = [[DataViewController alloc]init];
+    UINavigationController *navcLogin = [[UINavigationController alloc]initWithRootViewController:logInVc];
+    self.window.rootViewController = navcLogin;
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
     
     return YES;
 }

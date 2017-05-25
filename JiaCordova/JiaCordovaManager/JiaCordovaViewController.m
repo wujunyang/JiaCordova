@@ -60,6 +60,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.webView.frame=CGRectMake(0, 64, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height);
+    
     NSNotificationCenter *center = [NSNotificationCenter defaultCenter];
     [center addObserver:self
                selector:@selector(onNotification:)
