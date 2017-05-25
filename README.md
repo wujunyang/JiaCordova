@@ -1,3 +1,4 @@
+![](https://img.shields.io/badge/platform-ios-lightgrey.svg)![](https://img.shields.io/badge/language-objective-c-orange.svg)![](https://img.shields.io/cocoapods/l/JiaCordova.svg?style=flat)
 
 
 ## JiaCordova介绍
@@ -9,7 +10,7 @@ JiaCordova是为了让项目对于Cordova引入更加方便快捷的一个封装
 
 Cordova提供了一组设备相关的API，通过这组API，移动应用能够以JavaScript访问原生的设备功能，如摄像头、麦克风等。Cordova还提供了一组统一的JavaScript类库，以及为这些类库所用的设备相关的原生后台代码。Cordova支持如下移动操作系统：iOS, Android,ubuntu phone os, Blackberry, Windows Phone, Palm WebOS, Bada 和 Symbian。
 
-
+<img src="https://github.com/wujunyang/JiaCordova/blob/master/1.png" width=400px height=400px></img>
 
 
 ## JiaCordova运用
@@ -95,6 +96,10 @@ pod 'JiaCordova'
    [self.navigationController pushViewController:vc animated:YES];
 
 ```
+
+####  效果展现
+
+<img src="https://github.com/wujunyang/JiaCordova/blob/master/1.gif” width=200px height=300px></img>
 
 
 ## 联系方式
