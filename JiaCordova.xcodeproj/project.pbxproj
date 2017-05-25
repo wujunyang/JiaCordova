@@ -7,10 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3403DCC41ED6740400DBAF24 /* JiaMBprogressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3403DCC31ED6740400DBAF24 /* JiaMBprogressHUD.bundle */; };
+		3403DCC71ED6759000DBAF24 /* JiaMBProgressHUD+MP.m in Sources */ = {isa = PBXBuildFile; fileRef = 3403DCC61ED6759000DBAF24 /* JiaMBProgressHUD+MP.m */; };
+		3403DCCA1ED6785500DBAF24 /* JiaMBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 3403DCC91ED6785500DBAF24 /* JiaMBProgressHUD.m */; };
 		3416A5031ED3CF6D006E229B /* JiaCordovaSandBoxHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3416A5021ED3CF6D006E229B /* JiaCordovaSandBoxHelper.m */; };
 		3416A5081ED3E027006E229B /* JiaCordovaDownloadService.m in Sources */ = {isa = PBXBuildFile; fileRef = 3416A5071ED3E027006E229B /* JiaCordovaDownloadService.m */; };
 		3416A50B1ED40C5E006E229B /* html.zip in Resources */ = {isa = PBXBuildFile; fileRef = 3416A50A1ED40C5E006E229B /* html.zip */; };
 		34A22312A9EC000B08E0664B /* libPods-JiaCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF3FAF97D294CE47AAA10CD /* libPods-JiaCordova.a */; };
+		34CD69F81ED587A3003538EB /* TestCordovaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34CD69F71ED587A3003538EB /* TestCordovaViewController.m */; };
 		34FD29431ED272AE00230BE3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FD29421ED272AE00230BE3 /* main.m */; };
 		34FD29461ED272AE00230BE3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FD29451ED272AE00230BE3 /* AppDelegate.m */; };
 		34FD29491ED272AE00230BE3 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FD29481ED272AE00230BE3 /* RootViewController.m */; };
@@ -62,11 +66,18 @@
 
 /* Begin PBXFileReference section */
 		1DF3FAF97D294CE47AAA10CD /* libPods-JiaCordova.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JiaCordova.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3403DCC31ED6740400DBAF24 /* JiaMBprogressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = JiaMBprogressHUD.bundle; sourceTree = "<group>"; };
+		3403DCC51ED6759000DBAF24 /* JiaMBProgressHUD+MP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JiaMBProgressHUD+MP.h"; sourceTree = "<group>"; };
+		3403DCC61ED6759000DBAF24 /* JiaMBProgressHUD+MP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JiaMBProgressHUD+MP.m"; sourceTree = "<group>"; };
+		3403DCC81ED6785500DBAF24 /* JiaMBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JiaMBProgressHUD.h; sourceTree = "<group>"; };
+		3403DCC91ED6785500DBAF24 /* JiaMBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JiaMBProgressHUD.m; sourceTree = "<group>"; };
 		3416A5011ED3CF6D006E229B /* JiaCordovaSandBoxHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JiaCordovaSandBoxHelper.h; sourceTree = "<group>"; };
 		3416A5021ED3CF6D006E229B /* JiaCordovaSandBoxHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JiaCordovaSandBoxHelper.m; sourceTree = "<group>"; };
 		3416A5061ED3E027006E229B /* JiaCordovaDownloadService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JiaCordovaDownloadService.h; sourceTree = "<group>"; };
 		3416A5071ED3E027006E229B /* JiaCordovaDownloadService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JiaCordovaDownloadService.m; sourceTree = "<group>"; };
 		3416A50A1ED40C5E006E229B /* html.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = html.zip; sourceTree = "<group>"; };
+		34CD69F61ED587A3003538EB /* TestCordovaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestCordovaViewController.h; sourceTree = "<group>"; };
+		34CD69F71ED587A3003538EB /* TestCordovaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestCordovaViewController.m; sourceTree = "<group>"; };
 		34FD293E1ED272AE00230BE3 /* JiaCordova.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JiaCordova.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34FD29421ED272AE00230BE3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		34FD29441ED272AE00230BE3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -158,6 +169,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3403DCBD1ED66C9C00DBAF24 /* JiaMBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				3403DCC81ED6785500DBAF24 /* JiaMBProgressHUD.h */,
+				3403DCC91ED6785500DBAF24 /* JiaMBProgressHUD.m */,
+				3403DCC51ED6759000DBAF24 /* JiaMBProgressHUD+MP.h */,
+				3403DCC61ED6759000DBAF24 /* JiaMBProgressHUD+MP.m */,
+				3403DCC31ED6740400DBAF24 /* JiaMBprogressHUD.bundle */,
+			);
+			path = JiaMBProgressHUD;
+			sourceTree = "<group>";
+		};
 		3416A5091ED40BA9006E229B /* testZip */ = {
 			isa = PBXGroup;
 			children = (
@@ -197,12 +220,15 @@
 				34FD297C1ED27A8400230BE3 /* JiaNetwork */,
 				34FD297B1ED275B000230BE3 /* JiaCordovaConfig */,
 				34FD297A1ED2756200230BE3 /* JiaAFNetworking */,
+				3403DCBD1ED66C9C00DBAF24 /* JiaMBProgressHUD */,
 				34FD29441ED272AE00230BE3 /* AppDelegate.h */,
 				34FD29451ED272AE00230BE3 /* AppDelegate.m */,
 				34FD29471ED272AE00230BE3 /* RootViewController.h */,
 				34FD29481ED272AE00230BE3 /* RootViewController.m */,
 				34FD294A1ED272AE00230BE3 /* DataViewController.h */,
 				34FD294B1ED272AE00230BE3 /* DataViewController.m */,
+				34CD69F61ED587A3003538EB /* TestCordovaViewController.h */,
+				34CD69F71ED587A3003538EB /* TestCordovaViewController.m */,
 				34FD294D1ED272AE00230BE3 /* ModelController.h */,
 				34FD294E1ED272AE00230BE3 /* ModelController.m */,
 				34FD29501ED272AE00230BE3 /* Main.storyboard */,
@@ -452,6 +478,7 @@
 				34FD29521ED272AE00230BE3 /* Main.storyboard in Resources */,
 				34FD29B11ED27D9000230BE3 /* www in Resources */,
 				34FD29B01ED27D9000230BE3 /* config.xml in Resources */,
+				3403DCC41ED6740400DBAF24 /* JiaMBprogressHUD.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -534,6 +561,7 @@
 				34FD29D91ED2E29500230BE3 /* JiaCordovaViewController.m in Sources */,
 				34FD29901ED27CD100230BE3 /* JiaAFURLSessionManager.m in Sources */,
 				34FD29D61ED2E03D00230BE3 /* JiaCordovaFileManage.m in Sources */,
+				3403DCC71ED6759000DBAF24 /* JiaMBProgressHUD+MP.m in Sources */,
 				34FD298F1ED27CD100230BE3 /* JiaAFURLResponseSerialization.m in Sources */,
 				34FD298C1ED27CD100230BE3 /* JiaAFNetworkReachabilityManager.m in Sources */,
 				34FD29D11ED2AABF00230BE3 /* JiaYTKRequest.m in Sources */,
@@ -543,12 +571,14 @@
 				34FD298B1ED27CD100230BE3 /* JiaAFHTTPSessionManager.m in Sources */,
 				3416A5081ED3E027006E229B /* JiaCordovaDownloadService.m in Sources */,
 				34FD29431ED272AE00230BE3 /* main.m in Sources */,
+				34CD69F81ED587A3003538EB /* TestCordovaViewController.m in Sources */,
 				34FD29491ED272AE00230BE3 /* RootViewController.m in Sources */,
 				34FD29C91ED2AABF00230BE3 /* JiaYTKBaseRequest.m in Sources */,
 				34FD29B51ED2AA2800230BE3 /* JiaAFNetworkActivityIndicatorManager.m in Sources */,
 				34FD29CA1ED2AABF00230BE3 /* JiaYTKBatchRequest.m in Sources */,
 				34FD29CB1ED2AABF00230BE3 /* JiaYTKBatchRequestAgent.m in Sources */,
 				34FD29D01ED2AABF00230BE3 /* JiaYTKNetworkPrivate.m in Sources */,
+				3403DCCA1ED6785500DBAF24 /* JiaMBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

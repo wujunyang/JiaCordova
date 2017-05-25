@@ -21,17 +21,17 @@
     
     //第一次启动进行本地下载
     JiaCordovaFileManage *fileManager=[[JiaCordovaFileManage alloc]init];
-//    [fileManager loadLocalFileName:@"html.zip" unZipFolderName:@"html" successBlock:^{
-//        NSLog(@"成功");
-//    } failBlock:^(NSString *errorInfo) {
-//        NSLog(@"失败");
-//    }];
-    
-    [fileManager loadFileWithUrl:@"http://test.qshmall.net:9090/html.zip" unZipFolderName:@"html" deleteZip:YES successBlock:^{
-        
+    [fileManager loadLocalFileName:@"html.zip" unZipFolderName:@"www" successBlock:^{
+        NSLog(@"成功");
     } failBlock:^(NSString *errorInfo) {
-        
+        NSLog(@"失败");
     }];
+    
+//    [fileManager loadFileWithUrl:@"http://test.qshmall.net:9090/html.zip" unZipFolderName:@"html" deleteZip:YES successBlock:^{
+//        
+//    } failBlock:^(NSString *errorInfo) {
+//        
+//    }];
     
     return YES;
 }

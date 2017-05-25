@@ -8,8 +8,10 @@
 
 #import "DataViewController.h"
 #import "JiaAFNetworking.h"
+#import "TestCordovaViewController.h"
 
 @interface DataViewController ()
+
 
 @end
 
@@ -17,9 +19,23 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+   
+    UITapGestureRecognizer* singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleSingleTap:)];
+    
+    [self.view addGestureRecognizer:singleTap];
 }
 
+
+-(void)handleSingleTap:(UITapGestureRecognizer *)sender
+{
+    NSLog(@"当前路径：%@",[JiaCordovaFileManage jiaCordovaWWWFolder:@"www"]);
+    //TestCordovaViewController *vc=[[TestCordovaViewController alloc]initConfigWithNetwork:NO folderName:@"www" homePage:@"index.html" parameter:nil];
+    
+    //远程访问
+    TestCordovaViewController *vc=[[TestCordovaViewController alloc]initConfigWithNetwork:YES folderName:@"" homePage:@"http://www.cnblogs.com/" parameter:nil];
+    
+    [self presentViewController:vc animated:YES completion:nil];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

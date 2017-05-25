@@ -156,6 +156,6 @@
 
 +(NSString *)jiaCordovaWWWFolder:(NSString *)folderName
 {
-    return [[JiaCordovaSandBoxHelper docPath] stringByAppendingPathComponent:folderName];
+    return [NSString stringWithFormat:@"file://%@/%@",[JiaCordovaSandBoxHelper docPath],folderName];
 }
 @end

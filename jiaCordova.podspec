@@ -8,7 +8,7 @@
 Pod::Spec.new do |s|
 
 s.name         = "JiaCordova"
-s.version      = "0.1"
+s.version      = "0.2"
 s.summary      = "在Cordova及插件的基础上封装一些常用的功能"
 
 s.homepage     = "https://github.com/wujunyang/JiaCordova"
@@ -41,6 +41,11 @@ end
 
 s.subspec 'JiaCordovaPlugin' do |ss|
 ss.source_files = 'JiaCordova/JiaCordovaPlugin/**/*.{h,m}'
+end
+
+s.subspec 'JiaMBProgressHUD' do |ss|
+ss.source_files = 'JiaCordova/JiaMBProgressHUD/**/*.{h,m}'
+ss.resources  = "JiaCordova/JiaMBProgressHUD/*"
 end
 
 
