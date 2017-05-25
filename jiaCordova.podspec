@@ -41,7 +41,6 @@ end
 
 s.subspec 'JiaCordovaPlugin' do |ss|
 ss.source_files = 'JiaCordova/JiaCordovaPlugin/**/*.{h,m}'
-ss.dependency 'Cordova'
 end
 
 s.subspec 'JiaCordovaManager' do |ss|
@@ -50,14 +49,14 @@ ss.dependency 'JiaCordova/JiaAFNetworking'
 ss.dependency 'JiaCordova/JiaNetwork'
 ss.dependency 'JiaCordova/JiaMBProgressHUD'
 ss.dependency 'JiaCordova/JiaCordovaPlugin'
-ss.dependency 'Cordova'
-ss.dependency 'SSZipArchive'
 end
 
 
 # 系统库依赖
 s.frameworks = 'UIKit','MobileCoreServices', 'CoreGraphics', 'Security', 'SystemConfiguration'
 
+
+s.dependency 'SSZipArchive'
 # Cordova 依赖
 s.dependency 'Cordova'
 s.dependency 'CordovaPlugin-console'
