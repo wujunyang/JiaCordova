@@ -1,4 +1,4 @@
-![](https://img.shields.io/badge/platform-ios-lightgrey.svg)![](https://img.shields.io/badge/language-objective-c-orange.svg)![](https://img.shields.io/cocoapods/l/JiaCordova.svg?style=flat)
+![](https://img.shields.io/badge/platform-ios-blue.svg)![](https://img.shields.io/badge/language-OC-orange.svg)![](https://img.shields.io/cocoapods/l/JiaCordova.svg?style=flat)
 
 
 ## JiaCordova介绍
