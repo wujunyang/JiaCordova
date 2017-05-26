@@ -85,7 +85,7 @@
         NSDictionary *dic=@{@"name":@"wujunyang",@"projectID":@"12345"};
         
         
-        TestCordovaViewController *vc=[[TestCordovaViewController alloc]initConfigWithNetwork:NO folderName:@"wwws" homePage:@"index.html" parameter:dic];
+        TestCordovaViewController *vc=[[TestCordovaViewController alloc]initConfigWithNetwork:NO folderName:@"www" homePage:@"index.html" parameter:dic];
         // [self presentViewController:vc animated:YES completion:nil];
         //self.navigationController.navigationBar.hidden=YES;
         [self.navigationController pushViewController:vc animated:YES];
