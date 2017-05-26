@@ -30,6 +30,8 @@ pod 'JiaCordova'
 
 目前在插件中有两种方式进行引入资源文件（html页面、JS脚本、CCS文件等），都是以ZIP包进行存放；
 
+<img src="https://github.com/wujunyang/JiaCordova/blob/master/3.png" width=400px height=300px></img>
+
 1：第一种是存放在工程中的某个目录中，然后APP第一次运行时就会实现对它进行解压；实现的代码如下：
 
 ```obj-c
