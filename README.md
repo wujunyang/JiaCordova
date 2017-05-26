@@ -97,7 +97,49 @@ pod 'JiaCordova'
 
 ```
 
-####  四：效果展现
+其中parameter是存放参数，可以让JS进行调用，JS就可以动态获取到本身自个想要的参数，上面这两种方式都有做容错处理，假如不存在页面时都会默认跳到项目中提供的一个错误提示页面；
+
+####  四：JS获取OC的参数
+
+对于传参除了直接在url地址拼成以外，JiaCordova里面还通过一个JiaCordovaParameterPlugin插件实现交互，js可以把想获取到的参数的key值以数组的形式传给JiaCordovaParameterPlugin，会自动完成先前传参时的过滤然后再把对应的值回传给前端html页面；
+
+```obj-c
+        var options=new Array("name");
+        alert(options);
+        cordova.exec(
+                     function(result){
+                     var s=result;
+                     
+                     alert(s);
+                     
+                     for(var key in result )
+                     {
+                       var value=  result[key];
+                       alert(key+":"+value);
+                     }
+                     
+                     },
+                     function(error)
+                     {
+                       alert("error",error);
+                     }
+                     ,'JiaCordovaParameterPlugin','requestParameterData',[options]);
+
+```
+
+上面代码就是想获取OC中参数字典中key为name的值；如果你有多个参数都可以增加到数组中；但前提是客户端OC参数里面要有对应的key;
+
+```obj-c
+
+      NSDictionary *dic=@{@"name":@"wujunyang",@"projectID":@"12345"};
+        
+      TestCordovaViewController *vc=[[TestCordovaViewController alloc]initConfigWithNetwork:NO folderName:@"wwws" homePage:@"index.html" parameter:dic];
+
+```
+
+因为OC的字典已经存在name的key,所以它会把这个值过滤出来，并赋值成字典回传给JS；完成对于参数的动调获取；
+
+####  五：效果展现
 
 <img src="https://github.com/wujunyang/JiaCordova/blob/master/2.gif" width=200px height=300px></img>
 
