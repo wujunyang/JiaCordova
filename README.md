@@ -53,7 +53,7 @@ pod 'JiaCordova'
 
 目前在插件中有两种方式进行引入资源文件（html页面、JS脚本、CCS文件等），都是以ZIP包进行存放；
 
-<img src="https://github.com/wujunyang/JiaCordova/blob/master/3.png" width=550px height=300px></img>
+<img src="https://github.com/wujunyang/JiaCordova/blob/master/JiaCordova/3.png" width=550px height=300px></img>
 
 1：第一种是存放在工程中的某个目录中，然后APP第一次运行时就会实现对它进行解压；实现的代码如下：
 
@@ -128,7 +128,7 @@ pod 'JiaCordova'
 
 对于传参除了直接在url地址拼成以外，JiaCordova里面还通过一个JiaCordovaParameterPlugin插件实现交互，js可以把想获取到的参数的key值以数组的形式传给JiaCordovaParameterPlugin，会自动完成先前传参时的过滤然后再把对应的值回传给前端html页面；
 
-<img src="https://github.com/wujunyang/JiaCordova/blob/master/4.png" width=550px height=300px></img>
+<img src="https://github.com/wujunyang/JiaCordova/blob/master/JiaCordova/4.png" width=550px height=300px></img>
 
 ```obj-c
         var options=new Array("name");
@@ -168,7 +168,7 @@ pod 'JiaCordova'
 
 ####  五：效果展现
 
-<img src="https://github.com/wujunyang/JiaCordova/blob/master/2.gif" width=200px height=300px></img>
+<img src="https://github.com/wujunyang/JiaCordova/blob/master/JiaCordova/2.gif" width=200px height=300px></img>
 
 
 ## 联系方式
