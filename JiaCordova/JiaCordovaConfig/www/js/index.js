@@ -53,6 +53,7 @@ var app = {
         document.getElementById("vibrateBtn").onclick = app.testVibration;
         document.getElementById("splashscreenBtn").onclick = app.testSplashScreen;
         document.getElementById("JiaCodovaParBtn").onclick = app.testJiaCordovaPar;
+        document.getElementById("JiaDicBtn").onclick = app.testToOCPar;
     },
     // Update DOM on a Received Event
     receivedEvent: function (id) {
@@ -239,6 +240,7 @@ var app = {
     },
     testJiaCordovaPar:function()
     {
+        //js传数组KEY给OC OC返回对应的参数
         var options=new Array("name");
         alert(options);
         cordova.exec(
@@ -259,6 +261,22 @@ var app = {
                      alert("error",error);
                      }
                      ,'JiaCordovaParameterPlugin','requestParameterData',[options]);
+        
+        
+    },
+    testToOCPar:function()
+    {
+        options={quality:"200"};
+        cordova.exec(
+                     function(result){
+                     var s=result;
+                     alert(s);
+                     },
+                     function(error)
+                     {
+                     alert("error",error);
+                     }
+                     ,'JiaCordovaParameterPlugin','fromHtmlParameterData',[options]);
     }
 
 };

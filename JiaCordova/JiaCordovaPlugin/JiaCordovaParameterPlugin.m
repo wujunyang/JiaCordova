@@ -8,6 +8,8 @@
 
 #import "JiaCordovaParameterPlugin.h"
 
+NSString * const JiaCordovafromHtmlParameterNotification = @"JiaCordovafromHtmlParameterNotification";
+
 @interface JiaCordovaParameterPlugin()
 
 @end
@@ -61,5 +63,23 @@
     
     [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
 }
+
+
+-(void)fromHtmlParameterData:(CDVInvokedUrlCommand *)command
+{
+    NSDictionary *curDictionary=[command argumentAtIndex:0];
+    
+    if (curDictionary) {
+        //创建通知
+        NSNotification *notification =[NSNotification notificationWithName:JiaCordovafromHtmlParameterNotification object:nil userInfo:curDictionary];
+        //通过通知中心发送通知
+        [[NSNotificationCenter defaultCenter] postNotification:notification];
+    }
+    
+    CDVPluginResult *pluginResult=[CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:@"已经成功接收到参数"];
+    
+    [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
+}
+
 
 @end

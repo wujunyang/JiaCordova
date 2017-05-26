@@ -79,6 +79,9 @@
                selector:@selector(onNotificationed:)
                    name:CDVPageDidLoadNotification  // 加载完成
                  object:nil];
+    
+    //接收JS传过来要OC处理的参数
+    [center addObserver:self selector:@selector(jiaCordovafromHtmlParameterHandle:) name:JiaCordovafromHtmlParameterNotification object:nil];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -100,6 +103,29 @@
     [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
     
     [JiaMBProgressHUD hideHUD];
+}
+
+
+//子类创建jiaCordovafromHtmlParameterAction:(NSDictionary)直接获取到参数
+- (void)jiaCordovafromHtmlParameterHandle:(NSDictionary *)dic{
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wundeclared-selector"
+    SEL jiaCordovafromHtmlParameterSelector=@selector(jiaCordovafromHtmlParameterAction:);
+    if([self respondsToSelector:jiaCordovafromHtmlParameterSelector])
+    {
+        #pragma clang diagnostic ignored "-Warc-performSelector-leaks"
+        [self performSelector:jiaCordovafromHtmlParameterSelector withObject:dic];
+        
+    }
+#pragma clang diagnostic pop
+}
+
+
+-(void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:CDVPluginResetNotification object:nil];
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:CDVPageDidLoadNotification object:nil];
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:JiaCordovafromHtmlParameterNotification object:nil];
 }
 
 @end

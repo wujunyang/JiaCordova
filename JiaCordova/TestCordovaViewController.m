@@ -24,4 +24,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+
+-(void)jiaCordovafromHtmlParameterAction:(NSDictionary *)dictionary
+{
+    NSLog(@"OC收到参数了：%@",dictionary);
+}
+
 @end
