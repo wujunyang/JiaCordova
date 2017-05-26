@@ -13,6 +13,29 @@ Cordova提供了一组设备相关的API，通过这组API，移动应用能够�
 <img src="https://github.com/wujunyang/JiaCordova/blob/master/1.png" width=400px height=400px></img>
 
 
+JiaCordova默认已经引入Cordova插件如下：
+
+```obj-c
+
+    pod 'CordovaPlugin-console'
+    pod 'cordova-plugin-camera'
+    pod 'cordova-plugin-contacts'
+    pod 'cordova-plugin-device'
+    pod 'cordova-plugin-device-orientation'
+    pod 'cordova-plugin-device-motion'
+    pod 'cordova-plugin-globalization'
+    pod 'cordova-plugin-geolocation'
+    pod 'cordova-plugin-file'
+    pod 'cordova-plugin-media-capture'
+    pod 'cordova-plugin-network-information'
+    pod 'cordova-plugin-splashscreen'
+    pod 'cordova-plugin-inappbrowser'
+    pod 'cordova-plugin-file-transfer'
+    pod 'cordova-plugin-statusbar'
+    pod 'cordova-plugin-vibration'
+
+```
+
 ## JiaCordova运用
 
 ####  一：引用方式
