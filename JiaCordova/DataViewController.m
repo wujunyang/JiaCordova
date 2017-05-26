@@ -64,7 +64,7 @@
         _localButtom=[[UIButton alloc]initWithFrame:CGRectMake(10, 150, 200, 40)];
         _localButtom.tag=1002;
         [_localButtom setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
-        [_localButtom setTitle:@"跳转到远程网址" forState:UIControlStateNormal];
+        [_localButtom setTitle:@"跳转沙盒html页面" forState:UIControlStateNormal];
         [_localButtom addTarget:self  action:@selector(goPageAction:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _localButtom;
@@ -74,13 +74,18 @@
 {
     NSInteger index=sender.tag;
     if (index==1001) {
+        
+        
         //远程访问
         TestCordovaViewController *vc=[[TestCordovaViewController alloc]initConfigWithNetwork:YES folderName:@"" homePage:@"http://www.cnblogs.com/" parameter:nil];
         [self.navigationController pushViewController:vc animated:YES];
     }
     else if (index==1002)
     {
-        TestCordovaViewController *vc=[[TestCordovaViewController alloc]initConfigWithNetwork:NO folderName:@"www" homePage:@"index.html" parameter:nil];
+        NSDictionary *dic=@{@"name":@"wujunyang",@"projectID":@"12345"};
+        
+        
+        TestCordovaViewController *vc=[[TestCordovaViewController alloc]initConfigWithNetwork:NO folderName:@"wwws" homePage:@"index.html" parameter:dic];
         // [self presentViewController:vc animated:YES completion:nil];
         //self.navigationController.navigationBar.hidden=YES;
         [self.navigationController pushViewController:vc animated:YES];

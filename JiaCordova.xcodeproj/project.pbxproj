@@ -10,7 +10,7 @@
 		3403DCC41ED6740400DBAF24 /* JiaMBprogressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3403DCC31ED6740400DBAF24 /* JiaMBprogressHUD.bundle */; };
 		3403DCC71ED6759000DBAF24 /* JiaMBProgressHUD+MP.m in Sources */ = {isa = PBXBuildFile; fileRef = 3403DCC61ED6759000DBAF24 /* JiaMBProgressHUD+MP.m */; };
 		3403DCCA1ED6785500DBAF24 /* JiaMBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 3403DCC91ED6785500DBAF24 /* JiaMBProgressHUD.m */; };
-		3403DCD11ED681CA00DBAF24 /* JiaCordovaPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 3403DCD01ED681CA00DBAF24 /* JiaCordovaPlugin.m */; };
+		3403DCD11ED681CA00DBAF24 /* JiaCordovaParameterPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 3403DCD01ED681CA00DBAF24 /* JiaCordovaParameterPlugin.m */; };
 		3416A5031ED3CF6D006E229B /* JiaCordovaSandBoxHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3416A5021ED3CF6D006E229B /* JiaCordovaSandBoxHelper.m */; };
 		3416A5081ED3E027006E229B /* JiaCordovaDownloadService.m in Sources */ = {isa = PBXBuildFile; fileRef = 3416A5071ED3E027006E229B /* JiaCordovaDownloadService.m */; };
 		3416A50B1ED40C5E006E229B /* html.zip in Resources */ = {isa = PBXBuildFile; fileRef = 3416A50A1ED40C5E006E229B /* html.zip */; };
@@ -72,8 +72,8 @@
 		3403DCC61ED6759000DBAF24 /* JiaMBProgressHUD+MP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JiaMBProgressHUD+MP.m"; sourceTree = "<group>"; };
 		3403DCC81ED6785500DBAF24 /* JiaMBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JiaMBProgressHUD.h; sourceTree = "<group>"; };
 		3403DCC91ED6785500DBAF24 /* JiaMBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JiaMBProgressHUD.m; sourceTree = "<group>"; };
-		3403DCCF1ED681CA00DBAF24 /* JiaCordovaPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JiaCordovaPlugin.h; sourceTree = "<group>"; };
-		3403DCD01ED681CA00DBAF24 /* JiaCordovaPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JiaCordovaPlugin.m; sourceTree = "<group>"; };
+		3403DCCF1ED681CA00DBAF24 /* JiaCordovaParameterPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JiaCordovaParameterPlugin.h; sourceTree = "<group>"; };
+		3403DCD01ED681CA00DBAF24 /* JiaCordovaParameterPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JiaCordovaParameterPlugin.m; sourceTree = "<group>"; };
 		3416A5011ED3CF6D006E229B /* JiaCordovaSandBoxHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JiaCordovaSandBoxHelper.h; sourceTree = "<group>"; };
 		3416A5021ED3CF6D006E229B /* JiaCordovaSandBoxHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JiaCordovaSandBoxHelper.m; sourceTree = "<group>"; };
 		3416A5061ED3E027006E229B /* JiaCordovaDownloadService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JiaCordovaDownloadService.h; sourceTree = "<group>"; };
@@ -187,8 +187,8 @@
 		3403DCCE1ED681A200DBAF24 /* JiaCordovaPlugin */ = {
 			isa = PBXGroup;
 			children = (
-				3403DCCF1ED681CA00DBAF24 /* JiaCordovaPlugin.h */,
-				3403DCD01ED681CA00DBAF24 /* JiaCordovaPlugin.m */,
+				3403DCCF1ED681CA00DBAF24 /* JiaCordovaParameterPlugin.h */,
+				3403DCD01ED681CA00DBAF24 /* JiaCordovaParameterPlugin.m */,
 			);
 			path = JiaCordovaPlugin;
 			sourceTree = "<group>";
@@ -569,7 +569,7 @@
 				3403DCC71ED6759000DBAF24 /* JiaMBProgressHUD+MP.m in Sources */,
 				34FD298F1ED27CD100230BE3 /* JiaAFURLResponseSerialization.m in Sources */,
 				34FD298C1ED27CD100230BE3 /* JiaAFNetworkReachabilityManager.m in Sources */,
-				3403DCD11ED681CA00DBAF24 /* JiaCordovaPlugin.m in Sources */,
+				3403DCD11ED681CA00DBAF24 /* JiaCordovaParameterPlugin.m in Sources */,
 				34FD29D11ED2AABF00230BE3 /* JiaYTKRequest.m in Sources */,
 				3416A5031ED3CF6D006E229B /* JiaCordovaSandBoxHelper.m in Sources */,
 				34FD298D1ED27CD100230BE3 /* JiaAFSecurityPolicy.m in Sources */,

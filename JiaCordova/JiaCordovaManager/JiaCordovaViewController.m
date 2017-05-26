@@ -10,6 +10,7 @@
 #import "JiaCordovaFileManage.h"
 #import "JiaMBProgressHUD.h"
 #import "JiaMBProgressHUD+MP.h"
+#import "JiaCordovaParameterPlugin.h"
 
 @interface JiaCordovaViewController ()
 @property(nonatomic,assign)BOOL jiaIsNetwork;
@@ -30,6 +31,8 @@
             _jiaParameter=[[NSDictionary alloc]init];
         }
         _jiaParameter=parameter;
+        
+        [self configParameter];
         
         [self configLoadInfo];
     }
@@ -55,6 +58,11 @@
     }
     
     //非网络加载本地不存在时 则直接跳转到www index.html
+}
+
+-(void)configParameter
+{
+    [JiaCordovaParameterPlugin sharedManager].JiaParameter=_jiaParameter;
 }
 
 - (void)viewDidLoad {

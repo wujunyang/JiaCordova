@@ -87,6 +87,9 @@
     <feature name="CDVWKWebViewEngine">
         <param name="ios-package" value="CDVWKWebViewEngine" />
     </feature>
+    <feature name="JiaCordovaParameterPlugin">
+        <param name="ios-package" value="JiaCordovaParameterPlugin" />
+    </feature>
     <preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine" />
     <allow-intent href="itms:*" />
     <allow-intent href="itms-apps:*" />

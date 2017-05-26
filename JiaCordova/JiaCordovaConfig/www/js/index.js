@@ -52,6 +52,7 @@ var app = {
         document.getElementById("statusbarBtn").onclick = app.testStatusBar;
         document.getElementById("vibrateBtn").onclick = app.testVibration;
         document.getElementById("splashscreenBtn").onclick = app.testSplashScreen;
+        document.getElementById("JiaCodovaParBtn").onclick = app.testJiaCordovaPar;
     },
     // Update DOM on a Received Event
     receivedEvent: function (id) {
@@ -235,6 +236,29 @@ var app = {
                 log.value+="File Transfer Error "+err+"\n";
                 console.dir(err)
         });
+    },
+    testJiaCordovaPar:function()
+    {
+        var options=new Array("name");
+        alert(options);
+        cordova.exec(
+                     function(result){
+                     var s=result;
+                     
+                     alert(s);
+                     
+                     for(var key in result )
+                     {
+                     var value=  result[key];
+                     alert(key+":"+value);
+                     }
+                     
+                     },
+                     function(error)
+                     {
+                     alert("error",error);
+                     }
+                     ,'JiaCordovaParameterPlugin','requestParameterData',[options]);
     }
 
 };
