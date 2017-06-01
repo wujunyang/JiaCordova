@@ -31,6 +31,18 @@
 
 @implementation JiaCordovaFileManage
 
+
++ (JiaCordovaFileManage *)sharedManager
+{
+    static JiaCordovaFileManage *_sharedManager = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        _sharedManager = [[JiaCordovaFileManage alloc] init];
+    });
+    return _sharedManager;
+}
+
+
 -(void)loadFileWithUrl:(NSString *)url successBlock:(successBlockHandle)successBlock failBlock:(failBlockHanlde)failBlock
 {
     [self loadFileWithUrl:url unZipFolderName:nil deleteZip:YES successBlock:successBlock failBlock:failBlock];

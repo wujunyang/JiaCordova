@@ -15,6 +15,10 @@ typedef void(^failBlockHanlde)(NSString *errorInfo);
 
 @interface JiaCordovaFileManage : NSObject
 
+
++ (JiaCordovaFileManage *)sharedManager;
+
+
 /**
  网络URL地址进行Zip包下载解压
 

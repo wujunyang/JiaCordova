@@ -11,6 +11,9 @@
 		3403DCC71ED6759000DBAF24 /* JiaMBProgressHUD+MP.m in Sources */ = {isa = PBXBuildFile; fileRef = 3403DCC61ED6759000DBAF24 /* JiaMBProgressHUD+MP.m */; };
 		3403DCCA1ED6785500DBAF24 /* JiaMBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 3403DCC91ED6785500DBAF24 /* JiaMBProgressHUD.m */; };
 		3403DCD11ED681CA00DBAF24 /* JiaCordovaParameterPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 3403DCD01ED681CA00DBAF24 /* JiaCordovaParameterPlugin.m */; };
+		3408F5E21EDFA54E00B8AF57 /* JiaCordovaModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3408F5E11EDFA54E00B8AF57 /* JiaCordovaModel.m */; };
+		3408F5E51EDFA63100B8AF57 /* JiaConfigManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3408F5E41EDFA63100B8AF57 /* JiaConfigManager.m */; };
+		3408F5E81EDFAABF00B8AF57 /* JiaCordovaModuleService.m in Sources */ = {isa = PBXBuildFile; fileRef = 3408F5E71EDFAABF00B8AF57 /* JiaCordovaModuleService.m */; };
 		3416A5031ED3CF6D006E229B /* JiaCordovaSandBoxHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3416A5021ED3CF6D006E229B /* JiaCordovaSandBoxHelper.m */; };
 		3416A5081ED3E027006E229B /* JiaCordovaDownloadService.m in Sources */ = {isa = PBXBuildFile; fileRef = 3416A5071ED3E027006E229B /* JiaCordovaDownloadService.m */; };
 		3416A50B1ED40C5E006E229B /* html.zip in Resources */ = {isa = PBXBuildFile; fileRef = 3416A50A1ED40C5E006E229B /* html.zip */; };
@@ -74,6 +77,12 @@
 		3403DCC91ED6785500DBAF24 /* JiaMBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JiaMBProgressHUD.m; sourceTree = "<group>"; };
 		3403DCCF1ED681CA00DBAF24 /* JiaCordovaParameterPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JiaCordovaParameterPlugin.h; sourceTree = "<group>"; };
 		3403DCD01ED681CA00DBAF24 /* JiaCordovaParameterPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JiaCordovaParameterPlugin.m; sourceTree = "<group>"; };
+		3408F5E01EDFA54E00B8AF57 /* JiaCordovaModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JiaCordovaModel.h; sourceTree = "<group>"; };
+		3408F5E11EDFA54E00B8AF57 /* JiaCordovaModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JiaCordovaModel.m; sourceTree = "<group>"; };
+		3408F5E31EDFA63100B8AF57 /* JiaConfigManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JiaConfigManager.h; sourceTree = "<group>"; };
+		3408F5E41EDFA63100B8AF57 /* JiaConfigManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JiaConfigManager.m; sourceTree = "<group>"; };
+		3408F5E61EDFAABF00B8AF57 /* JiaCordovaModuleService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JiaCordovaModuleService.h; sourceTree = "<group>"; };
+		3408F5E71EDFAABF00B8AF57 /* JiaCordovaModuleService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JiaCordovaModuleService.m; sourceTree = "<group>"; };
 		3416A5011ED3CF6D006E229B /* JiaCordovaSandBoxHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JiaCordovaSandBoxHelper.h; sourceTree = "<group>"; };
 		3416A5021ED3CF6D006E229B /* JiaCordovaSandBoxHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JiaCordovaSandBoxHelper.m; sourceTree = "<group>"; };
 		3416A5061ED3E027006E229B /* JiaCordovaDownloadService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JiaCordovaDownloadService.h; sourceTree = "<group>"; };
@@ -347,6 +356,12 @@
 				3416A5021ED3CF6D006E229B /* JiaCordovaSandBoxHelper.m */,
 				3416A5061ED3E027006E229B /* JiaCordovaDownloadService.h */,
 				3416A5071ED3E027006E229B /* JiaCordovaDownloadService.m */,
+				3408F5E61EDFAABF00B8AF57 /* JiaCordovaModuleService.h */,
+				3408F5E71EDFAABF00B8AF57 /* JiaCordovaModuleService.m */,
+				3408F5E01EDFA54E00B8AF57 /* JiaCordovaModel.h */,
+				3408F5E11EDFA54E00B8AF57 /* JiaCordovaModel.m */,
+				3408F5E31EDFA63100B8AF57 /* JiaConfigManager.h */,
+				3408F5E41EDFA63100B8AF57 /* JiaConfigManager.m */,
 			);
 			path = JiaCordovaManager;
 			sourceTree = "<group>";
@@ -569,10 +584,12 @@
 				3403DCC71ED6759000DBAF24 /* JiaMBProgressHUD+MP.m in Sources */,
 				34FD298F1ED27CD100230BE3 /* JiaAFURLResponseSerialization.m in Sources */,
 				34FD298C1ED27CD100230BE3 /* JiaAFNetworkReachabilityManager.m in Sources */,
+				3408F5E81EDFAABF00B8AF57 /* JiaCordovaModuleService.m in Sources */,
 				3403DCD11ED681CA00DBAF24 /* JiaCordovaParameterPlugin.m in Sources */,
 				34FD29D11ED2AABF00230BE3 /* JiaYTKRequest.m in Sources */,
 				3416A5031ED3CF6D006E229B /* JiaCordovaSandBoxHelper.m in Sources */,
 				34FD298D1ED27CD100230BE3 /* JiaAFSecurityPolicy.m in Sources */,
+				3408F5E21EDFA54E00B8AF57 /* JiaCordovaModel.m in Sources */,
 				34FD29CF1ED2AABF00230BE3 /* JiaYTKNetworkConfig.m in Sources */,
 				34FD298B1ED27CD100230BE3 /* JiaAFHTTPSessionManager.m in Sources */,
 				3416A5081ED3E027006E229B /* JiaCordovaDownloadService.m in Sources */,
@@ -583,6 +600,7 @@
 				34FD29B51ED2AA2800230BE3 /* JiaAFNetworkActivityIndicatorManager.m in Sources */,
 				34FD29CA1ED2AABF00230BE3 /* JiaYTKBatchRequest.m in Sources */,
 				34FD29CB1ED2AABF00230BE3 /* JiaYTKBatchRequestAgent.m in Sources */,
+				3408F5E51EDFA63100B8AF57 /* JiaConfigManager.m in Sources */,
 				34FD29D01ED2AABF00230BE3 /* JiaYTKNetworkPrivate.m in Sources */,
 				3403DCCA1ED6785500DBAF24 /* JiaMBProgressHUD.m in Sources */,
 			);
