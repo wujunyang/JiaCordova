@@ -9,8 +9,11 @@
 #import "JiaCordovaFileManage.h"
 #import "JiaCordovaSandBoxHelper.h"
 #import "JiaCordovaDownloadService.h"
+#import "JiaCordovaModuleService.h"
+#import "JiaConfigManager.h"
 #import "SSZipArchive.h"
 #import "JiaAFNetworking.h"
+#import "JiaCordovaModel.h"
 
 @interface JiaCordovaFileManage()
 
@@ -31,15 +34,24 @@
 
 @implementation JiaCordovaFileManage
 
-
-+ (JiaCordovaFileManage *)sharedManager
++(void)startRequest
 {
-    static JiaCordovaFileManage *_sharedManager = nil;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        _sharedManager = [[JiaCordovaFileManage alloc] init];
-    });
-    return _sharedManager;
+    JiaCordovaFileManage *manager=[[JiaCordovaFileManage alloc]init];
+    
+    JiaCordovaModuleService *req=[[JiaCordovaModuleService alloc]initWithJiaCordovaApiModel:[JiaConfigManager sharedManager].jiaCordovaApiModel];
+    
+    [req startWithCompletionBlockWithSuccess:^(__kindof JiaYTKBaseRequest * _Nonnull request) {
+        JiaCordovaModel *model=[[JiaCordovaModel alloc]initWithString:request.responseString error:nil];
+        if ([model.status isEqualToString:@"0"]) {
+            manager.failHandle(model.message);
+            return;
+        }
+        
+        
+        
+    } failure:^(__kindof JiaYTKBaseRequest * _Nonnull request) {
+        manager.failHandle(@"请求接口下载失败");
+    }];
 }
 
 

@@ -266,7 +266,7 @@ var app = {
     },
     testToOCPar:function()
     {
-        options={quality:"200"};
+        options={LoginStatus:false};
         cordova.exec(
                      function(result){
                      var s=result;

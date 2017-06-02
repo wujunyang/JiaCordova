@@ -16,7 +16,7 @@ typedef void(^failBlockHanlde)(NSString *errorInfo);
 @interface JiaCordovaFileManage : NSObject
 
 
-+ (JiaCordovaFileManage *)sharedManager;
++(void)startRequest;
 
 
 /**

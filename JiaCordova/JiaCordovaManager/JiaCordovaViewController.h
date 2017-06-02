@@ -22,4 +22,14 @@
  */
 -(instancetype)initConfigWithNetwork:(BOOL)isNetwork folderName:(NSString *)folderName homePage:(NSString *)homePage parameter:(NSDictionary *)parameter;
 
+
+
+/**
+ 初始化跳转
+
+ @param urlScheme urlScheme字符串样式   jia-webview://moudleA/index.html?id=1234&name=wujunyang
+ @return <#return value description#>
+ */
+-(instancetype)initConfigScheme:(NSString *)urlScheme;
+
 @end

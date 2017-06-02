@@ -28,7 +28,17 @@
 
 -(void)jiaCordovafromHtmlParameterAction:(NSDictionary *)dictionary
 {
+    if (dictionary.count==0) {
+        return;
+    }
+    //可以前后端约定好相应的参数值 进行业务的处理
+    NSNumber *loginState=dictionary[@"LoginStatus"];
     NSLog(@"OC收到参数了：%@",dictionary);
+    
+    if(![loginState boolValue])
+    {
+        NSLog(@"跳转到登录");
+    }
 }
 
 @end

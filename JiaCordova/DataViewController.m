@@ -12,7 +12,7 @@
 
 @interface DataViewController ()
 
-@property(nonatomic,strong)UIButton *httpButtom,*localButtom;
+@property(nonatomic,strong)UIButton *httpButtom,*localButtom,*schemeButtom;
 
 @end
 
@@ -28,6 +28,7 @@
     
     [self.view addSubview:self.httpButtom];
     [self.view addSubview:self.localButtom];
+    [self.view addSubview:self.schemeButtom];
 }
 
 
@@ -70,12 +71,25 @@
     return _localButtom;
 }
 
+-(UIButton *)schemeButtom
+{
+    if(!_schemeButtom)
+    {
+        _schemeButtom=[[UIButton alloc]initWithFrame:CGRectMake(10, 200, 300, 40)];
+        _schemeButtom.tag=1003;
+        [_schemeButtom setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+        [_schemeButtom setTitle:@"Scheme跳转沙盒html页面" forState:UIControlStateNormal];
+        [_schemeButtom addTarget:self  action:@selector(goPageAction:) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _schemeButtom;
+}
+
+
+
 -(void)goPageAction:(UIButton *)sender
 {
     NSInteger index=sender.tag;
     if (index==1001) {
-        
-        
         //远程访问
         TestCordovaViewController *vc=[[TestCordovaViewController alloc]initConfigWithNetwork:YES folderName:@"" homePage:@"http://www.cnblogs.com/" parameter:nil];
         [self.navigationController pushViewController:vc animated:YES];
@@ -84,10 +98,14 @@
     {
         NSDictionary *dic=@{@"name":@"wujunyang",@"projectID":@"12345"};
         
-        
         TestCordovaViewController *vc=[[TestCordovaViewController alloc]initConfigWithNetwork:NO folderName:@"www" homePage:@"index.html" parameter:dic];
         // [self presentViewController:vc animated:YES completion:nil];
         //self.navigationController.navigationBar.hidden=YES;
+        [self.navigationController pushViewController:vc animated:YES];
+    }
+    else if (index==1003)
+    {
+        TestCordovaViewController *vc=[[TestCordovaViewController alloc]initConfigScheme:@"jia-webview://www/index.html?id=1234&name=wujunyang"];
         [self.navigationController pushViewController:vc animated:YES];
     }
 }

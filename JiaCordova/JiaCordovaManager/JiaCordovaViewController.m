@@ -40,6 +40,27 @@
 }
 
 
+-(instancetype)initConfigScheme:(NSString *)urlScheme
+{
+    NSURL *url=[NSURL URLWithString:urlScheme];
+    
+    NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
+    NSString *urlString = [url query];
+    for (NSString *param in [urlString componentsSeparatedByString:@"&"]) {
+        NSArray *elts = [param componentsSeparatedByString:@"="];
+        if ([elts count] < 2)
+            continue;
+        [params setObject:[elts lastObject] forKey:[elts firstObject]];
+    }
+    
+    NSString *pageName =
+    [url.path stringByReplacingOccurrencesOfString:@"/" withString:@""];
+    
+    return [self initConfigWithNetwork:NO folderName:url.host homePage:pageName parameter:params];
+}
+
+
+
 -(void)configLoadInfo
 {
     self.startPage=@"index.html";
@@ -107,14 +128,14 @@
 
 
 //子类创建jiaCordovafromHtmlParameterAction:(NSDictionary)直接获取到参数
-- (void)jiaCordovafromHtmlParameterHandle:(NSDictionary *)dic{
+- (void)jiaCordovafromHtmlParameterHandle:(NSNotification *)notification{
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wundeclared-selector"
     SEL jiaCordovafromHtmlParameterSelector=@selector(jiaCordovafromHtmlParameterAction:);
     if([self respondsToSelector:jiaCordovafromHtmlParameterSelector])
     {
         #pragma clang diagnostic ignored "-Warc-performSelector-leaks"
-        [self performSelector:jiaCordovafromHtmlParameterSelector withObject:dic];
+        [self performSelector:jiaCordovafromHtmlParameterSelector withObject:[notification userInfo]];
         
     }
 #pragma clang diagnostic pop

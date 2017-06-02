@@ -57,6 +57,8 @@ s.frameworks = 'UIKit','MobileCoreServices', 'CoreGraphics', 'Security', 'System
 
 
 s.dependency 'SSZipArchive'
+s.dependency 'JSONModel'
+
 # Cordova 依赖
 s.dependency 'Cordova'
 s.dependency 'CordovaPlugin-console'

@@ -7,8 +7,20 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <JSONModel/JSONModel.h>
 
-@interface JiaCordovaModel : NSObject
+@protocol JiaCordovaModularModel
+
+@end
+@class JiaCordovaModularModel;
+
+
+@interface JiaCordovaModel : JSONModel
+
+@property(nonatomic ,strong)NSString <Optional>*status;
+@property(nonatomic ,strong)NSString <Optional>*message;
+
+@property(nonatomic,strong)NSArray<JiaCordovaModularModel,Optional> *cordovaList;
 
 @end
 
@@ -36,7 +48,7 @@
 /**
  功能模块的信息
  */
-@interface JiaCordovaModularModel : NSObject
+@interface JiaCordovaModularModel : JSONModel
 
 //对应的功能模块标识名（唯一性）
 @property(nonatomic,copy)NSString *modularName;
