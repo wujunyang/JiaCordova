@@ -124,9 +124,19 @@ pod 'JiaCordova'
 
 其中parameter是存放参数，可以让JS进行调用，JS就可以动态获取到本身自个想要的参数，上面这两种方式都有做容错处理，假如不存在页面时都会默认跳到项目中提供的一个错误提示页面；
 
+3：请求沙盒的方式之Scheme跳转
+
+```obj-c
+
+   TestCordovaViewController *vc=[[TestCordovaViewController alloc]initConfigScheme:@"jia-webview://www/index.html?id=1234&name=wujunyang"];
+   [self.navigationController pushViewController:vc animated:YES];
+
+```
+针对本地加载的页面增加的scheme方式，只要简单把协议的字符串传入更可以进行跳转到加载指定的html页面，协议头都是以jia-webview为标识，www是对应的沙盒文件夹名称，index.html则要是页面，后面可以跟上对应的参数；代码会自动解析成字典；
+
 ####  四：JS获取OC的参数
 
-对于传参除了直接在url地址拼成以外，JiaCordova里面还通过一个JiaCordovaParameterPlugin插件实现交互，js可以把想获取到的参数的key值以数组的形式传给JiaCordovaParameterPlugin，会自动完成先前传参时的过滤然后再把对应的值回传给前端html页面；
+1：对于传参除了直接在url地址拼成以外，JiaCordova里面还通过一个JiaCordovaParameterPlugin插件实现交互，js可以把想获取到的参数的key值以数组的形式传给JiaCordovaParameterPlugin，会自动完成先前传参时的过滤然后再把对应的值回传给前端html页面；
 
 <img src="https://github.com/wujunyang/JiaCordova/blob/master/JiaCordova/4.png" width=550px height=300px></img>
 
@@ -165,6 +175,47 @@ pod 'JiaCordova'
 ```
 
 因为OC的字典已经存在name的key,所以它会把这个值过滤出来，并赋值成字典回传给JS；完成对于参数的动调获取；
+
+2：如果OC要根据Cordova的JS返回参数进行业务逻辑处理，JiaCordovaParameterPlugin插件中提供fromHtmlParameterData进行OC接收JS的字典参数，然后可以如下(提示原生OC端要进行登录的操作)进行操作；
+
+```obj-c
+
+        options={LoginStatus:false};
+        cordova.exec(
+                     function(result){
+                     var s=result;
+                     alert(s);
+                     },
+                     function(error)
+                     {
+                     alert("error",error);
+                     }
+                     ,'JiaCordovaParameterPlugin','fromHtmlParameterData',[options]);
+
+```
+
+这边JS只要调用，OC端就会马上进行响应，并根据通过去的字典值进行业务判断并处理；至于字典的参数则是前后端进行商议定下的字段；如上面LoginStatus这边用来定义登录状态；
+
+```obj-c
+
+	-(void)jiaCordovafromHtmlParameterAction:(NSDictionary *)dictionary
+	      {
+    		if (dictionary.count==0) {
+        	return;
+    		}
+    		//可以前后端约定好相应的参数值 进行业务的处理
+    		NSNumber *loginState=dictionary[@"LoginStatus"];
+    		NSLog(@"OC收到参数了：%@",dictionary);
+    
+    		if(![loginState boolValue])
+    		{
+        	   NSLog(@"跳转到登录");
+   		 }
+	      }
+
+```
+
+OC端只要在继承于JiaCordovaViewController的页面写上面的方法进行处理，实例中在TestCordovaViewController里面；
 
 ####  五：效果展现
 
